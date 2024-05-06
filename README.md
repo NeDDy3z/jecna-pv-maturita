@@ -2,8 +2,9 @@
 Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Ječná pro rok 2024.
 
 *K otázkám ke kterým existuje i videoprezentace, od našich studentů z roku 2023, je odkaz v nadpisu. [Zde je celý playlist](https://youtube.com/playlist?list=PLmW7bUCTvOeTSag9ZZBYXdHs_iEwB4OHM&si=VJGSQ_oeUkB861Yr)*
+- [Další zpracovaná témata z PV z předchozích let](https://github.com/AntoninKadrmas/MaturitaJecna)
+- [Zpracovaná témata z WA](https://github.com/oschl-git/jecna-wa-maturita)
 
-[Maturitní témata z WA](https://github.com/oschl-git/jecna-wa-maturita)
 ## Odkazy:
 1. [Adresování a správa paměti - Garbage collecting, Reference/ukazatele, Struktura paměti programu](topics/01%20-%20Adresování%20a%20správa%20paměti%20-%20Garbage%20collecting,%20Reference%20a%20Ukazatele,%20Struktura%20paměti%20programu.md)
 2. [Algoritmizace - Grafy, Prohlédávání stavového prostoru, Řazení](topics/02%20-%20Algoritmizace%20-%20Grafy,%20Prohlédávání%20stavového%20prostoru,%20Řazení.md)
