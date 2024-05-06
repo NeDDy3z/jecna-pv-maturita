@@ -5,7 +5,6 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 - [Další zpracovaná témata z PV z předchozích let](https://github.com/AntoninKadrmas/MaturitaJecna)
 - [Zpracovaná témata z WA](https://github.com/oschl-git/jecna-wa-maturita)
 
-<br></br><br></br><br></br>
 ---
 ## ⚠️⚠️⚠️ Vše v CodeBlocku potřebuje jedno z následujících: ⚠️⚠️⚠️
 - Udělat
@@ -13,7 +12,6 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 - Dodělat / Přidat chybějící _(obvykle "O čem mluvit?" viz téma 14.)_
 - Komplet předělat _(Stojí to za hovno)_
 ---
-<br></br><br></br><br></br>
 
 ## Odkazy:
 1. [Adresování a správa paměti - Garbage collecting, Reference/ukazatele, Struktura paměti programu](topics/01%20-%20Adresování%20a%20správa%20paměti%20-%20Garbage%20collecting,%20Reference%20a%20Ukazatele,%20Struktura%20paměti%20programu.md)
