@@ -22,7 +22,9 @@
 	- Body = vrcholy grafu (uzly)
 	- Linie = hrany graf
 - typy hran:
+
 ![Hrany](../images/02_hrany.jpg)
+
 *Pozor na pidimidi šipky*
 ## Typy Grafů
 #### Orientovaný
@@ -126,5 +128,6 @@
 	- Metoda mediánu tří – případně pěti či jiného počtu prvků. Pomocí pseudonáhodného algoritmu (také se používají fixní pozice, typicky první, prostřední a poslední) se vybere několik prvků z množiny, ze kterých se vybere medián, a ten je použit jako pivot.
 
 ![QuickSort](../images/02_quicksort.png)
+
 *wtf is this I aint learning this quicksort bruh*
 
