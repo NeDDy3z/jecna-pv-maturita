@@ -1,5 +1,6 @@
 # Maturitní témata z předmětu PV na SPŠE Ječná
 Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Ječná pro rok 2024.
+
 [Maturitní témata z předmětu WA (webové aplikace) pro rok 2024](https://github.com/oschl-git/jecna-wa-maturita)
 ## Odkazy:
 1. [Adresování a správa paměti - Garbage collecting, Reference/ukazatele, Struktura paměti programu](topics/01%20-%20Adresování%20a%20správa%20paměti%20-%20Garbage%20collecting,%20Reference%20a%20Ukazatele,%20Struktura%20paměti%20programu.md)
