@@ -28,7 +28,7 @@
 - Rekurzi dělíme na dva základní typy na základě toho, kolik podprogramů se jí účastní
 #### Rekurze může probíhat přímo nebo nepřímo:
 - **přímá rekurze** volá sama sebe
-- **nepřímá rekurze** je když vzájemné volání podprogramů tvoří kruh
+- **nepřímá rekurze** je když vzájemné volání podprogramů tvoří kruh
 	- příkladem je situace, kdy funkce A volá funkci B, která opět volá A
 #### Podprogram může být volán jednou, nebo vícekrát
 - **lineární rekurze** je když podprogram při vykonávání svého úkolu volá sama sebe jen jednou

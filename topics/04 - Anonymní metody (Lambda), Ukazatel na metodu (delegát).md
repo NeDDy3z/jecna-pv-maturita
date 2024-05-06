@@ -41,32 +41,29 @@ Console.WriteLine(IncrementBy(5, 2)); // 7 testForEquality = (x, y) => x == y;
 - pozor, nejsou vždy rychlejší! Mohou být i pomalejší
 - můžeme díky nim splnit určitý interface.
 #### Lambda výraz se dělí na dva typy
-```csharp
-// 1. Expression Lambda: Tvořena inputem a výrazem
-// Příklad:
-var square = numbers.Select(x => x * x);
+1. Expression Lambda
+	- tvořena inputem a výrazem
+	- ```csharp
+	  // Příklad:
+	  var square = numbers.Select(x => x * x);
+	  
+	  // Syntaxe
+	  input => expression;
+2. Statement Lambda
+	- tvořena inputem a více příkazy které budou vykonány
+	- ```csharp
+	  //Příklad:
+	  Action<string> greet = name => {
+		  string greeting = $"Hello {name}!";
+		  Console.WriteLine(greeting);
+	  };
+	  
+	  greet("Šnoulo"); // Prints "Hello Šmoulo
+	  
+	  // Syntaxe:
+	  input => { statements };
 
-// Syntaxe:
-input => expression;
-
-
-
-// 2. Statement Lambda: Tvořena inputem a více příkazy které budou vykonány
-// Příklad:
-Action<string> greet = name => {
-    string greeting = $"Hello {name}!";
-    
-    Console.WriteLine(greeting);
-};
-
-greet("Šnoulo"); // Prints "Hello Šmoulo"
-
-
-// Syntaxe:
-input => { statements };
-```
-
-- další příklad: lambda metoda pro sečtení dvou čísel
+- další příklad: lambda metody pro sečtení dvou čísel
 ```csharp
 int sum(int a, int b) => (a+b);
 ```

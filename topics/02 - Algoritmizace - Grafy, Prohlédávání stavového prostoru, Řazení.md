@@ -92,8 +92,9 @@
 	- pokud jsou čísla správně (nižší napravo od vyššího), pokračuje k dalšímu indexu bez úpravy
 
 ![BubbleSort](../images/02_bubblesort.png)
-#### Merge sort (rozděl a panuj)
+#### Merge sort
 - stabilní
+- "rozděl a panuj"
 - časová složitost: O(n * logn) *n je počet prvků*
 - paměťová složitost: O(n) - potřebuje pomocné pole stejné velikosti jako pole k řazení
 - metoda slévání
@@ -111,7 +112,7 @@
 - prvky se řadí na základě již projetých prvků
 
 ![InsertionSort](../images/02_insertionsort.png)
-#### Quicksort
+#### Quick sort
 - nestabilní
 - časová složitost: O(n^2) *n je počet prvků*
 	- O(n log n) v lepším případě
