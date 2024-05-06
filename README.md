@@ -6,11 +6,11 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 [Maturitní témata z WA](https://github.com/oschl-git/jecna-wa-maturita)
 ## Odkazy:
 1. [Adresování a správa paměti - Garbage collecting, Reference/ukazatele, Struktura paměti programu](topics/01%20-%20Adresování%20a%20správa%20paměti%20-%20Garbage%20collecting,%20Reference%20a%20Ukazatele,%20Struktura%20paměti%20programu.md)
-2. [Algoritmizace - Grafy, Prohlédávání stavového prostoru, Řazení](topics/02%20-%20Algoritmizace%20-%20Grafy,%20Prohlédávání%20stavového%20prostoru,%20Řazení)
-3. [Algoritmizace - Rekurze, Brute Force, Heuristiky, Nedeterministické algoritmy](topics/03%20-%20Algoritmizace%20-%20Rekurze,%20Brute%20Force,%20Heuristiky,%20Nedeterministické%20algoritmy)
-4. [Anonymní metody (Lambda), Ukazatel na metodu (delegát)](topics/04%20-%20Anonymní%20metody%20(Lambda),%20Ukazatel%20na%20metodu%20(delegát))
-5. [Architectural design patterns - MVC, Multitier, Monolithic, P2P, Client/Server](topics/05%20-%20Architectural%20design%20patterns%20-%20MVC,%20MultiTier,%20Monolithic,%20P2P,%20Client%20x%20Server)
-6. [Asymptotické paměťové a časové složitosti](topics/06%20-%20Asymptotické%20paměťové%20a%20časové%20složitosti)
+2. [Algoritmizace - Grafy, Prohlédávání stavového prostoru, Řazení](topics/02%20-%20Algoritmizace%20-%20Grafy,%20Prohlédávání%20stavového%20prostoru,%20Řazení.md)
+3. [Algoritmizace - Rekurze, Brute Force, Heuristiky, Nedeterministické algoritmy](topics/03%20-%20Algoritmizace%20-%20Rekurze,%20Brute%20Force,%20Heuristiky,%20Nedeterministické%20algoritmy.md)
+4. [Anonymní metody (Lambda), Ukazatel na metodu (delegát)](topics/04%20-%20Anonymní%20metody%20(Lambda),%20Ukazatel%20na%20metodu%20(delegát).md)
+5. [Architectural design patterns - MVC, Multitier, Monolithic, P2P, Client/Server](topics/05%20-%20Architectural%20design%20patterns%20-%20MVC,%20MultiTier,%20Monolithic,%20P2P,%20Client%20x%20Server.md)
+6. [Asymptotické paměťové a časové složitosti](topics/06%20-%20Asymptotické%20paměťové%20a%20časové%20složitosti.md)
 ```
 7. [Datové typy, Generika, Výčtové datové typy, Struktury, Anotace, Operátory](topics/)
 8. [Dědičnost, method overriding, function overloading](topics/)
