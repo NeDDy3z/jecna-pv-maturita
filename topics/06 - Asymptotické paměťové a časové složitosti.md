@@ -1,4 +1,5 @@
 # [Asymptotické paměťové a časové složitosti](https://youtu.be/zojej6FYgYQ?si=Gn2t4RPM3-uLhTYD)
+
 ## O čem mluvit?
 - Co to je?
 - Způsoby klasifikace 

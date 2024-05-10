@@ -18,6 +18,7 @@
   - built in metody
   - implemetace stringu
   - proč je immutable?     
+
 ## Parsování textu
 - = syntaktická analýza textu
 - převedení dat z určitého formátu do jiného (použitelnějšího) formátu
@@ -28,7 +29,8 @@
 		  int a = int.Parse(s); // Výsledkem bude int s hodnotou 56
 		  ```
 		- používá se například u kalkulačky, kde uživatel zadá číslo ve formě textu a aby mohlo být číslo použito v příkladu tak je nejdříve potřeba ho převést do intu
-#### Regex
+	
+## Regex
 - regulární výraz (**Reg**ular **Ex**pression)
 - textový řetězec, který slouží jako vzor pro hledání v jiném textovém řetězci
 - <details>
@@ -39,7 +41,7 @@
 ## Kódování
 - způsob, jaký upravit data na formu, kterou bude počítač schopný zpracovat
 - většinou se ke kódování používají přesně stanovené tabulky a znakové sady
-- *(tzn. že i např. Morseovka je kódovaná)*
+	- *(tzn. že i např. Morseovka je kódovaná)*
 
 #### ASCII
  - používá sedmibitovou tabulku, kde je každému písmenu v anglické abecedě a různým dalším znakům přiřazeno nějaké číslo 
