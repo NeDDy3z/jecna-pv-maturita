@@ -40,7 +40,7 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 23. [Vlastnosti datových struktur - Seřazenost a opakování prvků, Indexace, hashování a klíče prvků](topics/)
 24. [Výjimky a aserce, debugování a zpracování chyb](topics/)
 ```
-25. [Zpracování a parsování textových dat, regulár.md](topics/25%20-%20Zpracov%C3%A1n%C3%AD%20a%20parsov%C3%A1n%C3%AD%20textov%C3%BDch%20dat%2C%20regul%C3%A1r.md)
+25. [25 - Zpracování a parsování textových dat, regulární výrazy, kódování a stringy](topics/25%20-%20Zpracování%20a%20parsování%20textových%20dat,%20regulární%20výrazy,%20kódování%20a%20stringy.md)
 
 ## Style guide:
 - každé téma má **h1** nadpis, který se shoduje s názvem souboru a obsahuje číslo maturitní otázky
