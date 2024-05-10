@@ -10,6 +10,7 @@
 	    - vzájemná kompenzace
 	    - analýza požadavků na konkrétní problém
 - Jak analyzovat složitost?
+
 ## Asymptotická složitost programu
 - způsob klasifikace určitého algoritmu
 	- algoritmus je přesně daný postup, jak vyřešit určitý problém
@@ -19,6 +20,7 @@
 - je důležité zmínit, že jiné zařízení mají jiné parametry
 	- tím pádem se výsledek bude lišit na různých zařízeních 
 	- tyto složitosti rozlišují tím, jak doba vykonání roste se změnou množství dat
+
 #### Klasifikace
 - **Big O** [big O]
 	- nejpoužívanější
@@ -31,32 +33,12 @@
 	- určuje složitost ve vymezených hranicích
 	- tzn. že reálná se bude lišit od perfektní složitosti maximálně ve vymezených limitách (průměr)
 	- ![BigO](../images/06_bigtheta.png)
-## Asymptotická paměťová složitost
-- Space / Memory Complexity
-- určuje kolik operační paměti bude využito
-- častá chyba je, že si někdo může říct, že paměťovou složitost nelze rozlišit, protože na různých zařízeních bude využívat stejné množství paměti, což sice je pravda, ale stále ji můžeme rozlišit. 
-- A rozlišit jí můžeme naprosto stejně jako u časové, akorát se změní otázka na **jak** **paměť vykonání roste se změnou množství dat.**
-#### Typy
-- **Konstantní – Θ (1)**
-	- s pamětí se nic neděje, využíváme stále to stejné množství/obsah
-	- např.: 
-		- for-cyklus, kde tiskneme „i“ 
-			- v tomto případě se totiž s pamětí neděje nic jiného než že jsme jednou vytvořili proměnnou i a neustále jí jen přepisujeme (upravujeme její obsah) a tiskneme 
-				- = paměťová složitost je konstantní
-- **Lineární – Θ (n)**
-	- např.: 
-		- rekurzivní řešení faktoriálu 
-			- pokud máme například faktoriál 6, je to 6x5x4x3x2x1 – Tudíž pro faktoriál šesti potřebujeme šestkrát uchovat největší hodnotu
-		- ArrayList
-			- jak arraylist roste, roste i jeho potřeba pro paměť
-- **Kvadratická - Θ (n2)**
-	- např.: 
-		- 2D Array
-		- násobení matic
+
 ## Asymptotická časová složitost
 - Time Complexity
 - určuje dobu, kterou procesor vyžaduje k vykonání úlohy
 	- (počítá se s tím, že máme neomezenou paměť)
+
 #### Typy
 - **Konstantní – Θ (1)**
 	- konstantní složitost nám říká, že na počtu dat nezáleží
@@ -99,3 +81,27 @@
 	- např.: 
 		- řešení problému obchodního cestujícího
 			- postupně projdeme absolutně všechny kombinace cest, které existují, a poté vybereme tu nejsnazší
+
+## Asymptotická paměťová složitost
+- Space / Memory Complexity
+- určuje kolik operační paměti bude využito
+- častá chyba je, že si někdo může říct, že paměťovou složitost nelze rozlišit, protože na různých zařízeních bude využívat stejné množství paměti, což sice je pravda, ale stále ji můžeme rozlišit. 
+- A rozlišit jí můžeme naprosto stejně jako u časové, akorát se změní otázka na **jak** **paměť vykonání roste se změnou množství dat.**
+
+#### Typy
+- **Konstantní – Θ (1)**
+	- s pamětí se nic neděje, využíváme stále to stejné množství/obsah
+	- např.: 
+		- for-cyklus, kde tiskneme „i“ 
+			- v tomto případě se totiž s pamětí neděje nic jiného než že jsme jednou vytvořili proměnnou i a neustále jí jen přepisujeme (upravujeme její obsah) a tiskneme 
+				- = paměťová složitost je konstantní
+- **Lineární – Θ (n)**
+	- např.: 
+		- rekurzivní řešení faktoriálu 
+			- pokud máme například faktoriál 6, je to 6x5x4x3x2x1 – Tudíž pro faktoriál šesti potřebujeme šestkrát uchovat největší hodnotu
+		- ArrayList
+			- jak arraylist roste, roste i jeho potřeba pro paměť
+- **Kvadratická - Θ (n2)**
+	- např.: 
+		- 2D Array
+		- násobení matic

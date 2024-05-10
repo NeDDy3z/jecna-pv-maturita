@@ -15,6 +15,7 @@
 	- k čemu je dobré
 	- řadící algoritmy
 	    - porovnání na základě časové a paměťové složitosti
+
 ## Grafy
 - graf je datová strukturu popisující vztahy mezi objekty
 - grafy z oblasti teorie grafů mají široké využití v mnoha oblastech, např. úlohy o dopravním spojení, logistické problémy, optimální spojení, propustnost sítě, přenos energie, komprese dat
@@ -26,62 +27,75 @@
 ![Hrany](../images/02_hrany.jpg)
 
 *Pozor na pidimidi šipky*
+
 ## Typy Grafů
 #### Orientovaný
 - obsahuje hrany s definovaným směrem
 	- hrany mají šipky označující směr procházení
 - hrany mají počáteční a koncový vrchol
 - např.: graf webové stránky, kde jsou odkazy mezi stránkami
+
 #### Neorientovaný
 - jeho hrany nemají směr 
 	- hrany nejsou opatřeny šipkami označujícími směr průchodu
 	- jsou vzájemně spojeny bez ohledu na směr
 - např.: graf přátel na sociální síti, kde přátelství nejsou směrová
+
 #### Hodnocený
 - má hrany nebo vrcholy, které jsou přiřazeny s hodnotami nebo váhami 
 - můžou představovat například vzdálenost mezi vrcholy, náklady na cestu nebo jakoukoli jinou informaci
 - např.: graf silnic, kde hodnoty mohou představovat vzdálenost mezi dvěma městy
+
 #### Neohodnocený
 - nemá váhy nebo hodnoty přiřazené hranám nebo vrcholům
 - např.: graf sociální sítě, kde hrany představují přátelství
+
 #### Úplný
 - obsahuje všechny možné hrany mezi všemi vrcholy 
 	- každý vrchol je přímý soused každého jiného vrcholu
 - např.: graf turnaje, kde každý hráč hraje proti každému jinému hráči
+
 #### Neúplný
 - nemusí mít všechny možné hrany mezi vrcholy 
 - může obsahovat pouze určité hrany, které spojují určité páry vrcholů.
+
 #### Cyklický
 - obsahuje jeden nebo více cyklů 
 	- sled vrcholů a hran, který začíná a končí ve stejném vrcholu
 - můžu projít celý ten graf
 - např.: graf sdílení kol, kde cykly představují trasy, po kterých kola jezdí.
+
 #### Strom 
 - spojený graf bez cyklů 
 - jdu shora dolů
 - např.: rodinný strom, kde je každá osoba spojena se svými rodiči
+
 ## Prohledávání stavového prostoru
 - základní technika v umělé inteligenci 
 - stavový prostor je graf stavů
 - používá se k nalezení cesty nebo řešení problému v grafových strukturách nebo stavových prostorech za účelem nalezení požadovaného stavu
 
 ![Searching_diagram](../images/02_stavovyprostor.png)
+
 #### Prohledávání do šířky - BFS
 - Breadth-First Search    
 - prohledává stavový prostor postupně do hloubky
 	- postupuje z počátečního stavu do všech jeho sousedních stavů, poté do sousedních stavů těchto sousedních stavů a tak dále
 - vhodný pro hledání nejkratší cesty v neohodnocených grafech a prohledávání v grafech s konstantním nákladem na hrany
+
 #### Prohledávání do hloubky - DFS:
 - Depth-First Search    
 - prohledává stavový prostor do hloubky
 	- prochází co nejhlouběji do stavů, než se vrátí a prozkoumá další stavy.
 - vhodný pro hledání všech cest v grafu, řešení problémů s rekurzivní povahou a prohledávání v grafech s velkým větvícím faktorem
+
 ## Řadicí algoritmy
 - řadící algoritmus je algoritmus zajišťující uspořádání dané sady (typicky pole) do pořadí
 - nejvýkonnější algoritmy bývají zpravidla ty, které neporovnávají jednotlivé hodnoty prvků
 - existují algoritmy stabilní a nestabilní
 	- u stabilního nehrozí, že by v jeho průběhu byly prohozeny stejné hodnoty
 		- to je užitečné především tehdy, když je řazeno více algoritmů
+
 #### Bubble sort
 - stabilní
 - časová složitost: O(n^2) *n je počet prvků*
@@ -92,6 +106,7 @@
 	- pokud jsou čísla správně (nižší napravo od vyššího), pokračuje k dalšímu indexu bez úpravy
 
 ![BubbleSort](../images/02_bubblesort.png)
+
 #### Merge sort
 - stabilní
 - "rozděl a panuj"
@@ -104,6 +119,7 @@
 	- sousední prvky se porovnávají a slévají do jednoho pole dokud nezbyde jen jedno pole
 
 ![MergeSort](../images/02_mergesort.png)
+
 #### Insertion sort
 - nestabilní
 - časová složitost: O(n^2) *n je počet prvků*
@@ -112,6 +128,7 @@
 - prvky se řadí na základě již projetých prvků
 
 ![InsertionSort](../images/02_insertionsort.png)
+
 #### Quick sort
 - nestabilní
 - časová složitost: O(n^2) *n je počet prvků*

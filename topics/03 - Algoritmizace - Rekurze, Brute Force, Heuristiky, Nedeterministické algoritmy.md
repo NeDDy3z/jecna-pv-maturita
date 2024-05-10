@@ -1,4 +1,5 @@
 # [Algoritmizace - Rekurze, Brute Force, Heuristiky, Nedeterministické algoritmy](https://youtu.be/wp_Zli_cgZw?si=sAHSumwAF2QL3NIx)
+
 ## O čem mluvit?
 - Rekurze - *tu brát ze začátku teoreticky pak až přejít na tu v programování*
 	- co to je? 
@@ -17,6 +18,7 @@
 - Determenistické vs Nedeterministické algoritmy - *tady nejde říct mnoho, je to "třešnička na dortu"*
     - co to je?
     - příklad
+
 ## Rekurze
 - tj. když objekt je součástí sám sebe
 - v programování je to prakticky cyklus
@@ -24,12 +26,15 @@
 - u některých úloh to může vést k rychlému a efektivnímu řešení
 	- nemusí ale být optimální
 - pokud se snažíme program optimalizovat z hlediska paměti, rekurzi se snažíme omezit, či kompletně eliminovat
+
 ## Typy rekurze
-- Rekurzi dělíme na dva základní typy na základě toho, kolik podprogramů se jí účastní
+- rekurzi dělíme na dva základní typy na základě toho, kolik podprogramů se jí účastní
+
 #### Rekurze může probíhat přímo nebo nepřímo:
 - **přímá rekurze** volá sama sebe
 - **nepřímá rekurze** je když vzájemné volání podprogramů tvoří kruh
 	- příkladem je situace, kdy funkce A volá funkci B, která opět volá A
+
 #### Podprogram může být volán jednou, nebo vícekrát
 - **lineární rekurze** je když podprogram při vykonávání svého úkolu volá sama sebe jen jednou
 - **stromová rekurze** je když se funkce v rámci jednoho vykonávání úkolu zavolá vícekrát. Strukturu volání lze znázornit jako binární strom (viz obrázek)
@@ -50,6 +55,7 @@
 
 ![Bruteforce](../images/03_bruteforce.png)
 ![Keys](../images/03_keys.png)
+
 ## Heuristiky
 - heuristika je v podstatě zkusmé řešení problému
 - obvykle označení pro algoritmy které:
@@ -59,6 +65,7 @@
 - vhodné tehdy, pokud neznáme přesný postup, jak dojít k cíli
 	- toto řešení nemusí být ale jsou dostatečně přesné a rychlé
 		- např.: rozhodnutí bota v šachách
+
 #### Nejčastější metody Heuristiky:
 - **Generický algoritmus** 
 	- algoritmus založený na principu přirozeného výběru
@@ -70,9 +77,11 @@
 - **Iterativní metoda** 
 	- využívá postupného hledání řešení ve stále se zužující oblasti řešení 
 	- postupně se z dobrého řešení dopracovává k ještě lepšímu řešení
+
 ## Determenistické / Nedeterministické algoritmy
 #### Determenistické
 - za stejných podmínek vrátí vždy ten stejný výsledek
+
 #### Nedeterministické
 - za stejných podmínek **ne**vratí vždy ten stejný výsledek
 - např.: MonteCarlo, Hod kostkou

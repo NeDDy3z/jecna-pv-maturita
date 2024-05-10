@@ -1,5 +1,6 @@
 # [Anonymní metody (Lambda), Ukazatel na metodu (delegát)](https://youtu.be/tNwfoEaFF68?si=YaftN8RaOIRkU47k)
-*Upřímně tenhle dokument stojí za prd a potřebuje těžkou revizi*
+*Upřímně, tenhle dokument stojí za prd a potřebuje těžkou revizi*
+
 ## O čem mluvit?
 - Anonymní metoda (Lambda)
     - co to je?
@@ -9,6 +10,7 @@
     - co to je?
     - typy delegátu v C# - (Func, Action, Predicate)
     - využití -> Callback, Event
+
 ## Anonymní metody
 - blok kódu, který je nadefinován beze jména
 - může být použit jako proměnná
@@ -27,6 +29,7 @@ Console.WriteLine(IncrementBy(5)); // 6
 
 Console.WriteLine(IncrementBy(5, 2)); // 7 testForEquality = (x, y) => x == y;
 ```
+
 ## Lambda
 - zkrácený zápis anonymní metody
 - kus kódu, který na vstup dostane proměnnou a další vrátí
@@ -35,11 +38,13 @@ Console.WriteLine(IncrementBy(5, 2)); // 7 testForEquality = (x, y) => x == y;
 - můžou být použity jako proměnná
 - Lambdy mají určitá pravidla -> Nemohou uvnitř obsahovat proměnné, podmínky či cykly. Mohou být psány více způsoby.
 - Lambda je v c# řešena pomocí knihovny Linq
+
 #### Proč lambdu použít?
 - pomáhají filtrovat a získávat data z kolekcí bez zbytečně dlouhého kódu 
 - jsou převážně krátké a jednoduché na pochopení
 - pozor, nejsou vždy rychlejší! Mohou být i pomalejší
 - můžeme díky nim splnit určitý interface.
+
 #### Lambda výraz se dělí na dva typy
 1. Expression Lambda
 	- tvořena inputem a výrazem
@@ -67,6 +72,7 @@ Console.WriteLine(IncrementBy(5, 2)); // 7 testForEquality = (x, y) => x == y;
 ```csharp
 int sum(int a, int b) => (a+b);
 ```
+
 ## Delegát
 - proměnná která odkazuje na nějakou metodu
 	- technicky je to referenční datový typ
@@ -88,6 +94,7 @@ int sum(int a, int b) => (a+b);
     }
 }
 ```
+
 #### Využití delgátů
 - callback funkce
 - eventy
@@ -111,8 +118,10 @@ class Program {
     }
 }
 ```
+
 #### Generické delgáty
 - V C# máme předdefinované delegáty, takže většinu času není třeba definovat vlastní
+
 #### Func
 - nemusí mít žádný vstup (0-16)
 - 1 výstup
@@ -125,6 +134,7 @@ Console.WriteLine(calc(3, 5));
 calc = ((a, b) => a * b);
 Console.WriteLine(calc(3, 5));
 ```
+
 #### Predicate
 - bere jeden vstupní parametr
 - vrací true / false
@@ -133,6 +143,7 @@ Predicate<string> isUpper = s => s.Equals(s.ToUpper());
 
 bool result = isUpper("hello world!!");
 ```
+
 #### Action
 - nemá výstup, tzv. delegát co vrací void
 ```csharp

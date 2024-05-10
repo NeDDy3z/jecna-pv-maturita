@@ -1,5 +1,6 @@
 # [Adresování a správa paměti - Garbage collecting, Reference/Ukazatele, Struktura paměti programu](https://youtu.be/zhQXxuwxqek?si=Eietvsgz-LvIm1e4)
-## **O čem mluvit?**
+
+## O čem mluvit?
 - Reference a ukazatele
    - co je to?
    - adresa proměnné
@@ -14,6 +15,7 @@
     - jak funguje?
     - k čemu slouží?
     - nachází se ve všech jazycích?
+
 ## Reference a Pointer
 #### Reference 
 - odkaz na proměnnou nebo instanci objektu na haldě
@@ -27,6 +29,7 @@ Example exampleObject = new Example(); // exampleObject is the reference
 
 string exampleString = "example"; // exampleString is the reference
 ```
+
 #### Pointer (Ukazatel)
 - odkaz na adresu (místo) proměnné
 - datový typ
@@ -50,11 +53,13 @@ string exampleString = "example"; // exampleString is the reference
 	int *uk = &x; // Ukazatel ukazuje na adresu x
 	*uk = 20;     // Změna hodnoty x pomocí ukazatele
 ```
+
 ## Struktura paměti
 - struktury jsou podobné třídám, nemohou se však dědit nebo být děděny.
 - narozdíl od tříd jsou uloženy na stacku.
 - více o strukturách v otázce “Datové typy, Generika, Výčtové datové typy, Struktury, Delegáti, Eventy” od Karla Muroně.
 - taky je dobré zmínit, že všechny primitivní typy v C# jsou struktury, proto můžeme například napsat int. a zobrazí se nám různé metody. Funguje pouze v mainu, pokud to zkusíme v nějaké třídě, nic nám to neukáže, protože třída je na heapu a to znamená, že i struktura vytvořená ve třídě se uloží na heap.
+
 #### Heap (Halda)
 - je pouze jedna v celém programu
 - na haldu se ukládají všechny referenční typy 
@@ -63,6 +68,7 @@ string exampleString = "example"; // exampleString is the reference
 - je přístupná pro všechny
 	- (pokud instanci nezablokujeme modifikátorem přístupu – public, private, internal, protected)
 - pokud jsou na haldě nějaká data, na které neukazuje žádná proměnná, smaže je garbage collector
+
 #### Stack (Zásobník)
 - druh paměti, který vlákna využívají pro provedení kódu
 	- Každé vlákno má vlastní zásobník
@@ -73,6 +79,7 @@ string exampleString = "example"; // exampleString is the reference
 - proměnné volané v metodách, se také ukládají na zásobník, jsou ale nepřístupné, a jakmile metoda skončí, smažou se
 - pokud je práce s paměťovým blokem ukončena tak je i s daty smazán 
 	- (není ve skutečnosti smazán, ale časem přepsán jiným blokem. Úplně stejné to funguje všude v PC)
+
 #### Příklady
 - proměné **a**,**b** jsou uloženy na heapuu, protože jsou proměnné třídy, **c** je ale proměnná metody, tudíž patří do stacku
 ```csharp
@@ -88,6 +95,7 @@ class example {
 ```
 
 ![Heap-Stack](../images/01_heap.png)
+
 ## Garbage Collector
 - automatizovaná správa paměti na haldě
 - uvolňuje nepoužívanou paměť
@@ -102,6 +110,7 @@ class example {
 - rozděluje paměť v haldě do 3 kategorií **Generation 0, Generation 1 a Generation 2**
 
 ![GC_tree](../images/01_gc1.png)
+
 #### Generation 0
 - každá proměnná začíná zde
 - místo, kde se nacházejí právě vytvořené objekty (objekty s krátkou životností)
@@ -109,10 +118,12 @@ class example {
 	- je to rychlá operace
 - patří sem nejčastěji dočasné proměnné (např. v metodě)
 - pokud je místo plné, **GC** ho pročistí, a ty které nesmaže, jsou přesunuty do **Gen 1**
+
 #### Generation 1
 - obsahuje krátkodobé objekty a slouží jako vyrovnávací paměť mezi krátkodobé a dlouhodobé objekty
 - **GC** se zde spouští oproti **Gen 0** méně častěji
 - opět: pokud je místo plné, **GC** ho pročistí, a ty které nesmaže, jsou přesunuty do **Gen 2**
+
 #### Generation 2
 - obsahuje objekty s dlouhou životností
 	- ty zde obvykle žijí po celý chod programu
