@@ -20,8 +20,9 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 4. [Anonymní metody (Lambda), Ukazatel na metodu (delegát)](topics/04%20-%20Anonymní%20metody%20(Lambda),%20Ukazatel%20na%20metodu%20(delegát).md)
 5. [Architectural design patterns - MVC, Multitier, Monolithic, P2P, Client/Server](topics/05%20-%20Architectural%20design%20patterns%20-%20MVC,%20MultiTier,%20Monolithic,%20P2P,%20Client%20x%20Server.md)
 6. [Asymptotické paměťové a časové složitosti](topics/06%20-%20Asymptotické%20paměťové%20a%20časové%20složitosti.md)
+
+7. [Datové typy, Generika, Výčtové datové typy, Struktury, Anotace, Operátory](topics/07%20-%20Datové%20typy,%20Generika,%20Výčtové%20datové%20typy,%20Struktury,%20Anotace,%20Operátory.md)
 ```
-7. [Datové typy, Generika, Výčtové datové typy, Struktury, Anotace, Operátory](topics/)
 8. [Dědičnost, method overriding, function overloading](topics/)
 9. [Integrita dat, bezpečnost, logování, kontrola vstupů, zpracování chyb](topics/)
 10. [Komunikace s databázovým systémem - Připojení, Ukládání a načítání dat, Mapování entit v OOP](topics/)
