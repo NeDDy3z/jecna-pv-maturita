@@ -29,7 +29,9 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 12. [Metodiky a životní cyklus vývoje softwaru](topics/)
 13. [Návrhové vzory - creational design patterns, structural design patterns, behavioral patterns](topics/)
 14. [Principy objektového programování, agregace a kompozice objektů](topics/)
-15. [Programovací jazyky - vlastnosti, srovnání, popis způsobu tvorby i běhu programů](topics/)
+```
+15. [Programovací jazyky - vlastnosti, srovnání, popis způsobu tvorby i běhu programů](topics/15%20-%20Programovací%20jazyky%20-%20vlastnosti,%20srovnání,%20popis%20způsobu%20tvorby%20i%20běhu%20programů.md)
+```
 16. [Soubory a serializace - Ukládání a načítání dat, formáty souborů](topics/)
 17. [Strojové učení - Příprava dat, Chyby v datech a bias, Korelace a kauzalita](topics/)
 18. [Strojové učení s využitím regrese a klasifikace](topics/)
@@ -40,7 +42,7 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 23. [Vlastnosti datových struktur - Seřazenost a opakování prvků, Indexace, hashování a klíče prvků](topics/)
 24. [Výjimky a aserce, debugování a zpracování chyb](topics/)
 ```
-25. [25 - Zpracování a parsování textových dat, regulární výrazy, kódování a stringy](topics/25%20-%20Zpracování%20a%20parsování%20textových%20dat,%20regulární%20výrazy,%20kódování%20a%20stringy.md)
+25. [Zpracování a parsování textových dat, regulární výrazy, kódování a stringy](topics/25%20-%20Zpracování%20a%20parsování%20textových%20dat,%20regulární%20výrazy,%20kódování%20a%20stringy.md)
 
 ## Style guide:
 - každé téma má **h1** nadpis, který se shoduje s názvem souboru a obsahuje číslo maturitní otázky
