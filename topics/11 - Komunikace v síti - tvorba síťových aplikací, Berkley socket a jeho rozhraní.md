@@ -26,11 +26,11 @@ Probíhá ve třech krocích(3-way handshake):
 - Server odešle klientovi datagram s nastavenými příznaky SYN a ACK, potvrzovací číslo=x+1, pořadové číslo je náhodně vygenerované (y)
 - Klient odešle datagram s nastaveným příznakem ACK, pořadové číslo=x+1, číslo odpovědi=y+1.
 
-<img src="images/11_3-way_handshake.png">
+![alt-text](images/11_3-way_handshake.png)
 
 Obě strany si pamatují pořadové číslo vlastní i protistrany. Používají se totiž i pro další komunikaci a určují pořadí paketů. Když úspěšně proběhne trojcestný handshaking, je spojení navázáno a zůstane tak až do ukončení spojení.
 
-<img src="images/11_tcp_communication.png">
+![alt-text](images/11_tcp_communication.png)
 
 **Ukončení spojení** 
 Probíhá podobně jako jeho navázání. Používá se k tomu příznaků FIN a ACK:
@@ -39,7 +39,7 @@ Probíhá podobně jako jeho navázání. Používá se k tomu příznaků FIN a
 - Druhá strana, která ukončuje posílání dat, odešle datagram s nastaveným příznakem FIN
 - Protistrana odpoví datagramem s nastaveným příznakem ACK
 
-<img src="images/11_3-way_handshake(term).jpg">
+![alt-text](images/11_3-way_handshake(term).jpg)
 
 Po prvních dvou krocích může druhá strana pokračovat v posílání dat. Pokud žádná data posílat nebude, mohou být kroky 2 a 3 sloučeny. Teprve po těchto čtyřech krocích je spojení ukončeno.
 
@@ -94,7 +94,7 @@ Toto z něj dělá značně rychlejší protokol než je TCP. Je ale nespolehliv
 
 Protokol UDP je vhodný pro nasazení, které vyžaduje jednoduchost, malá režie nebo pro aplikace pracující systémem otázka-odpověď (např. DNS, sdílení souborů v LAN. Jeho bezstavovost je užitečná pro servery, které obsluhují mnoho klientů nebo pro nasazení, kde se počítá se ztrátami datagramů a není vhodné, aby se ztrácel čas novým odesíláním (starých) nedoručených zpráv (např. VoIP, online hry).
 
-<img src="images/11_udp_communication.png">
+![alt-text](images/11_udp_communication.png)
 
 **UDP Příklad:**
 Python:
