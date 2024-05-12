@@ -1,49 +1,65 @@
-# Komunikace v síti - tvorba síťových aplikací, Berkley socket a jeho rozhraní
+# [Komunikace v síti - tvorba síťových aplikací, Berkley socket a jeho rozhraní](https://youtu.be/RHb8T_lhIR4?list=PLmW7bUCTvOeTSag9ZZBYXdHs_iEwB4OHM)
+*Tady Manďa těžce doporučoval nezklouznout k PSS, je to furt matura o programování a ne o posraným PustoMasovi*
 
 ## O čem mluvit?
-- protokoly
+- Protokol
+	- co to je?
 	- vyjmenovat různé protokoly
-	- mluvit hlavně o TCP x UDP
-	- **rozdíly**
-	- na co se používají
-	- uvést HTTP, typy requestů
-- nějak popsat tvorbu síťových aplikací
-- vysvětlit BSD
+	- TCP a UDP
+		- jak fungují?
+		- princip
+		- **rozdíly** oproti sobě
+		- využití
+			- UDP - videostreaming
+			- TCP - chat
+	- HTTP
+		- typy requestů
+- [Client / Server](topics/05%20-%20Architectural%20design%20patterns%20-%20MVC,%20MultiTier,%20Monolithic,%20P2P,%20Client%20x%20Server##Client%20/%20Server)
+- Popsat tvorbu síťových aplikací
+- Vysvětlit BSD
 	- dát příklady z BSD API příkazů
 
 ## Komunikace v síti
-Komunikace v síti probíhá díky určitým protokolům, mají určená využití. 
-- výměna informací a dat např. mezi klienty, mezi klientem a serverem
+- komunikace v síti probíhá díky protokolům
+- probíhá díky nim výměna informací (dat) 
+	- např. mezi klienty, mezi klientem a serverem
 
-### Transmission Control Protocol (**TCP**)
-Nejpoužívanější protok transportní vrstvy (čtvrtá vrstva OSI). Použitím TCP mohou aplikace na počítačích propojených do sítě vytvořit mezi sebou _spojení_, přes které mohou obousměrně přenášet data. Protokol garantuje spolehlivédoručování a doručování ve správném pořadí. TCP také umožňuje rozlišovat a rozdělovat data pro více aplikací (například webový server a emailový server) běžících na stejném počítači.
+## Transmission Control Protocol (TCP)
+- nejpoužívanější protokol *(čtvrté transportní vrstvy OSI)*
+- garantuje spolehlivé doručování dat a to i ve správném pořadí
+	- posílá packety a ověřuje jestli dorazili, pokud ne, pošle je znovu
+- použitím TCP mohou aplikace na počítačích propojených do sítě vytvořit mezi sebou spojení
+	- přes to mohou obousměrně přenášet data 
+- TCP také umožňuje rozlišovat a rozdělovat data pro více aplikací (například webový server a emailový server) běžících na stejném počítači
+- používán skoro všude: 
+	- WWW, E-mailu, SSH, ...
 
-TCP využívá mnoho populárních aplikačních protokolů a aplikací na internetu, včetně WWW, e-mailu a SSH.
+#### Navázání spojení
+Probíhá ve třech krocích **(3-way handshake)**:
+- klient odešle na server datagram s nastaveným příznakem SYN a náhodně vygenerovaným pořadovým číslem (x), potvrzovací číslo = 0
+- server odešle klientovi datagram s nastavenými příznaky SYN a ACK, potvrzovací číslo = x+1, pořadové číslo je náhodně vygenerované (y)
+- klient odešle datagram s nastaveným příznakem ACK, pořadové číslo=x+1, číslo odpovědi = y+1.
 
-**Navázání spojení** 
-Probíhá ve třech krocích(3-way handshake):
-- Klient odešle na server datagram s nastaveným příznakem SYN a náhodně vygenerovaným pořadovým číslem (x), potvrzovací číslo=0.
-- Server odešle klientovi datagram s nastavenými příznaky SYN a ACK, potvrzovací číslo=x+1, pořadové číslo je náhodně vygenerované (y)
-- Klient odešle datagram s nastaveným příznakem ACK, pořadové číslo=x+1, číslo odpovědi=y+1.
+![3 Way handshake](../images/11_3-way_handshake.png)
 
-![alt-text](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/11_3-way_handshake.png)
+- obě strany si pamatují pořadové číslo vlastní i protistrany
+- používají se totiž i pro další komunikaci a určují pořadí paketů
+- když úspěšně proběhne handshake, je spojení navázáno a zůstane tak až do ukončení spojení
 
-Obě strany si pamatují pořadové číslo vlastní i protistrany. Používají se totiž i pro další komunikaci a určují pořadí paketů. Když úspěšně proběhne trojcestný handshaking, je spojení navázáno a zůstane tak až do ukončení spojení.
+![TCP Communication](../images/11_tcp_communication.png)
 
-![alt-text](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/11_tcp_communication.png)
-
-**Ukončení spojení** 
+#### Ukončení spojení
 Probíhá podobně jako jeho navázání. Používá se k tomu příznaků FIN a ACK:
-- Strana, která nechce posílat další data, odešle datagram s nastaveným příznakem FIN
-- Protistrana odpoví datagramem s nastaveným příznakem ACK s potvrzovacím číslem o jedničku větším, než bylo pořadové číslo v datagramu s příznakem FIN (jako kdyby protistrana poslala místo FIN jeden byte dat)
-- Druhá strana, která ukončuje posílání dat, odešle datagram s nastaveným příznakem FIN
-- Protistrana odpoví datagramem s nastaveným příznakem ACK
+- strana, která nechce posílat další data, odešle datagram s nastaveným příznakem FIN
+- protistrana odpoví datagramem s nastaveným příznakem ACK s potvrzovacím číslem o jedničku větším, než bylo pořadové číslo v datagramu s příznakem FIN (jako kdyby protistrana poslala místo FIN jeden byte dat)
+- druhá strana, která ukončuje posílání dat, odešle datagram s nastaveným příznakem FIN
+- protistrana odpoví datagramem s nastaveným příznakem ACK
 
 ![alt-text](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/11_3-way_handshake(term).jpg)
 
 Po prvních dvou krocích může druhá strana pokračovat v posílání dat. Pokud žádná data posílat nebude, mohou být kroky 2 a 3 sloučeny. Teprve po těchto čtyřech krocích je spojení ukončeno.
 
-**TCP Příklad:**
+#### Příklad
 Python:
 Server:
 ```python
@@ -87,16 +103,23 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
     print("Received:", response.decode())
 ```
 
-### User Datagram Protocol (UDP)
-Jednoduchý protokol založený na posílání nezávislých zpráv. Nezachovává pořadí paketů. Prostě to “chrlí”. Když se jeden paket ztratí, nic se neděje.
+## User Datagram Protocol (UDP)
+- založený na posílání nezávislých zpráv
+- nezachovává pořadí paketů - prostě to “chrlí”. 
+	- když se jeden paket ztratí, nic se neděje
+- rychlejší než TCP
+- nespolehlivý v doručování
 
-Toto z něj dělá značně rychlejší protokol než je TCP. Je ale nespolehlivý a to v tom, že nekontroluje doručené packety.
+Vhodný pro malé aplikace a aplikace pracující systémem otázka-odpověď
+- např.:
+	- DNS
+	- stream videa, VOIP
+	- online hry
+	- jeho bezstavovost je užitečná pro servery, které obsluhují mnoho klientů nebo pro nasazení kde se počítá se ztrátami datagramů a není vhodné, aby se ztrácel čas novým odesíláním (starých) nedoručených zpráv (např. VoIP, online hry).
 
-Protokol UDP je vhodný pro nasazení, které vyžaduje jednoduchost, malá režie nebo pro aplikace pracující systémem otázka-odpověď (např. DNS, sdílení souborů v LAN. Jeho bezstavovost je užitečná pro servery, které obsluhují mnoho klientů nebo pro nasazení, kde se počítá se ztrátami datagramů a není vhodné, aby se ztrácel čas novým odesíláním (starých) nedoručených zpráv (např. VoIP, online hry).
+![UDP Communication](../images/11_udp_communication.png)
 
-![alt-text](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/11_udp_communication.png)
-
-**UDP Příklad:**
+#### Příklad
 Python:
 Server:
 ```python
@@ -134,7 +157,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as client_socket:
 ```
 
 
-### Rozdíly mezi TCP a UDP
+## Rozdíly mezi TCP a UDP
 TCP je spojově orientovaný protokol což znamená, že k navázání "end-to-end" komunikace potřebuje, aby proběhl mezi klientem a serverem tzv. "handshaking". Poté, co bylo spojení navázáno, data mohou být posíláná oběma směry. Charakteristické vlastnosti TCP protokolu jsou:
 
 - spolehlivost – TCP používá potvrzování o přijetí, opětovné posílání a překročení časového limitu. Pokud se jakákoliv data ztratí po cestě, server si je opětovně vyžádá. U TCP nejsou žádná ztracená data, jen pokud několikrát po sobě vyprší časový limit, tak je celé spojení ukončeno.
@@ -148,10 +171,11 @@ UDP je jednodušší protokol založený na odesílání nezávislých zpráv. C
 - jednoduchost – Nižší režie než u TCP (není zde řazení, žádné sledování spojení atd.).
 
 
-### Hyper Text Transfer Protocol (HTTP)
-Postavený na protokolu TCP.
-
-V tomto případě jsme většinou v roli klienta a komunikujeme se vzdáleným webserverem (nginx, apache). Využít můžeme například jednoduchou třídu WebClient. Ve většině případů posíláme 2 typy requestů, a to POST a GET.
+## Hyper Text Transfer Protocol (HTTP)
+- postavený na protokolu TCP
+- obvykle jsme v roli klienta a komunikujeme se vzdáleným webserverem (nginx, apache)
+- ve většině případů posíláme 2 typy requestů, a to POST a GET
+- využít můžeme například jednoduchou třídu WebClient
 
 #### GET
 - request pomocí URL např. pro ověření konektivity na stránku 'https://w3schools.com' pomocí *get* metody v pythonu
@@ -187,7 +211,6 @@ print(x.text)
 #### Další typy requestů:
 - **PUT**
 	- Nahraje data na server. Objekt je jméno vytvořeného souboru. Používá se velmi zřídka, pro nahrávání dat na server se běžně používá FTP nebo SCP/SSH.
-
 - **DELETE**
 	- Smaže uvedený objekt ze serveru. K tomu je zapotřebí jistých oprávnění stejně jako u metody PUT.
 - **TRACE**
@@ -198,11 +221,10 @@ print(x.text)
 	- Metoda podobná GET, avšak nepředává data. Poskytne pouze metadata o požadovaném cíli (velikost, typ, datum změny, …).
 
 
-### Další protokoly
+## Další protokoly
 - File Transfer Protocol (FTP)
 - SSH File Transfer Protocol (SFTP)
 - Simple Mail Transfer Protocol (SMTP)
-
 
 ## Tvorba síťových aplikací
 K vývoji síťové aplikace, jako např. e-mail, online hra, nějaký FTP server, ..., se nejdřív muíme rozhodnout jaký protokol je vhodný pro naši aplikaci. Například UDP na online hru, SMTP na e-mail, atd.
