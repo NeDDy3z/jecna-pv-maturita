@@ -1,15 +1,30 @@
-# Komunikace s databázovým systémem - Připojení, Ukládání a načítání dat, Mapování entit v OOP
+# [Komunikace s databázovým systémem - Připojení, Ukládání a načítání dat, Mapování entit v OOP](https://youtu.be/lFRMdGfo_XA)
 
 ## O čem mluvit?
-- jak se připojit k db
-- co k tomu potřebuju
-- jakým způsobem ukládám a čtu data
-- vysvětlit ORM, k čemu je dobré
-- zmínit fasádu
+- Připojení k DB
+	- jak se k ní připojit
+	- connection string
+	- co k tomu potřebuju
+- Ukládání a načítaní dat
+	- jak?
+- Mapování v OOP
+	- ORM
+		- k čemu je dobré
+		- objektový model namísto psaní SQL queries
+- Zmínit fasádu
 
 ## Připojení
-Většinou programovací jazyk neobsahuje nástroje k připojení na databázi, proto se nejdřív musí instalovat potřebné knihovny pro daný jazyk, tyto knihovny jsou vyvíjeny přímo vydavateli dané databáze. Takovým knihovnám se říká konektory - dovolují nám připojit se k databázi. 
-Připojení k databázovému systému je přes TCP/IP spojení, tudíž potřebujeme IP adresu a někdy i port(příklad u C#).
+- většinou programovací jazyk neobsahuje nástroje k připojení na databázi
+	- pro to se obvykle používají knihovny 
+		- tyto knihovny jsou vyvíjeny přímo tvůrci daného DB systému
+		- takovým knihovnám se říká konektory - dovolují nám připojit se k databázi
+- připojujeme se k DB přes TCP/IP spojení
+	- tudíž potřebujeme IP adresu a někdy i port (příklad u C#)
+- k připojení obvykle potřebujeme následující údaje *(příklady v mysql - data jsou příkladová)*
+	- username *root*
+	- password *student*
+	- hostname *127.0.0.1*
+	- port *3306*
 
 Příklady instalace MySQL konektoru:
 Python:
@@ -40,41 +55,6 @@ mydb = mysql.connector.connect(
 
 ```
 
-C:
-```c
- #include <mysql.h>
- #include <stdio.h>
- main() {
-     MYSQL *conn;
-     MYSQL_RES *res;
-     MYSQL_ROW row;
-     char *server = "localhost";
-     char *user = "root";
-     char *password = "PASSWORD";
-     char *database = "mysql";
-     conn = mysql_init(NULL);
-
-     if (!mysql_real_connect(conn, server,
-         user, password, database, 0, NULL, 0)) {
-        fprintf(stderr, "%s\n", mysql_error(conn));
-        exit(1);
-    }
-
-    if (mysql_query(conn, "show tables")) {
-        fprintf(stderr, "%s\n", mysql_error(conn));
-        exit(1);
-    }
-    res = mysql_use_result(conn);
-
-    printf("MySQL Tables in mysql database:\n");
-    while ((row = mysql_fetch_row(res)) != NULL)
-        printf("%s \n", row[0]);
-    
-    mysql_free_result(res);
-    mysql_close(conn);
-}
-```
-
 C#:
 ```csharp
 using System;
@@ -103,7 +83,8 @@ class Program
 ```
 
 ## Ukládání a načítání dat
-Používáme SQL příkazy (SELECT, UPDATE, ...)
+- používáme SQL příkazy (SELECT, UPDATE, ...)
+- vytváříme tzv. queries které pak posíláme DB
 
 **Ukládání**
 Python:
@@ -184,7 +165,9 @@ mydb.close()
 Samozřejmě potřebujeme mít nějaké znalosti s SQL jazykem a znát databázový systém s kterým pracujeme.
 
 ## Mapování entit v OOP
-Tímto tématem se zybývá architektura ORM(Objektově relační mapování), která převádí hodnoty uložené v relační databázi na objekty v naší aplikaci a zajišťuje synchronizaci dat mezi databází a těmito objekty. V dnešní době se používá běžně a je standardem pro základ aplikace, která nějakým způsobem manipuluje s databází.
+- tímto tématem se zabývá architektura ORM (Objektově relační mapování)
+	- převádí hodnoty uložené v relační databázi na objekty v naší aplikaci a zajišťuje synchronizaci dat mezi databází a těmito objekty
+- v dnešní době se používá běžně a je standardem pro základ aplikace, která nějakým způsobem manipuluje s databází
 
 ORM je vestavěné do webových frameworků jako např. Symphony.
 
@@ -243,8 +226,11 @@ session.commit()
 session.close()
 ```
 
-### Fasáda
-Softwarový návrhový vzor, který slouží ke zjednodušení komunikace mezi uživatelem a systémem. Použití je výhodné, pokud je tento systém příliš komplexní (obsahuje mnoho tříd a vazeb) pro splnění dané oblasti úloh, jež po něm vyžadují uživatelé. Fasáda je způsob nahrazení velkého počtu rozhraní subsystémů, sjednoceným rozhraním, které bude zaštitovat všechna rozhraní subsystémů.
+#### Fasáda
+- návrhový vzor 
+- slouží ke zjednodušení komunikace mezi uživatelem a systémem 
+- použití je výhodné, pokud je tento systém příliš komplexní (obsahuje mnoho tříd a vazeb) pro splnění dané oblasti úloh, jež po něm vyžadují uživatelé. 
+- fasáda je způsob nahrazení velkého počtu rozhraní subsystémů, sjednoceným rozhraním, které bude zaštitovat všechna rozhraní subsystémů
 
 Vytvoření fasády pro lehčí manipulaci s entitou Users.
 
