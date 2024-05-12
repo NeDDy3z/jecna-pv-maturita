@@ -25,8 +25,10 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 
 ```
 8. [Dědičnost, method overriding, function overloading](topics/)
+```
 9. [Integrita dat, bezpečnost, logování, kontrola vstupů, zpracování chyb](topics/09%20-%20Integrita%20dat,%20bezpečnost,%20logování,%20kontrola%20vstupů,%20zpracování%20chyb.md)
 10. [Komunikace s databázovým systémem - Připojení, Ukládání a načítání dat, Mapování entit v OOP](topics/10%20-%20Komunikace%20s%20databázovým%20systémem%20-%20Připojení,%20Ukládání%20a%20načítání%20dat,%20Mapování%20entit%20v%20OOP.md)
+```
 11. [Komunikace v síti - Využití UDP/TCP protokolu](topics/)
 12. [Metodiky a životní cyklus vývoje softwaru](topics/)
 13. [Návrhové vzory - creational design patterns, structural design patterns, behavioral patterns](topics/)
