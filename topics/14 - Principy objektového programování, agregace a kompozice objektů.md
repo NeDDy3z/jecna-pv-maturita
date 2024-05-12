@@ -186,10 +186,10 @@ V **C#** pro to používáme:
 		- kdy počítač s tiskárnou tvoří jeden celek, ale tiskárna může existovat i tehdy, pokud není k žádnému počítači připojena. 
 - agregace je formou asociace a v grafické podobě se odlišuje prázdným kosočtvercem na straně celku
 
-![[images/14_agregace.png]]
+![alt-text](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/14_agregace.png)
 
 - z obrázku(nahoře) je zřejmé, že ke každému počítači může být připojen libovolný počet tiskáren a že tiskárna může být připojena k nejvýše jednomu počítači. 
 - podstatné je, že odpojíme-li tiskárnu od počítače a počítač dáme do šrotu, je tiskárna stále použitelná s jiným počítačem. Silnější formou agregace je kompozice
 	- jde opět o vztah mezi celkem a součástí, ale tento vztah je velmi těsný a neumožňuje samostatnou existenci součásti, aniž by byla připojena k nějakému celku. Navíc na rozdíl od agregace tato součást musí patřit jen jedinému celku a není možné ji sdílet s více celky
 
-![[images/14_kompozice.png]]
+![alt-text](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/14_kompozice.png)
