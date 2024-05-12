@@ -30,8 +30,8 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 11. [Komunikace v síti - Využití UDP/TCP protokolu](topics/)
 12. [Metodiky a životní cyklus vývoje softwaru](topics/)
 13. [Návrhové vzory - creational design patterns, structural design patterns, behavioral patterns](topics/)
-14. [Principy objektového programování, agregace a kompozice objektů](topics/)
 ```
+14. [Principy objektového programování, agregace a kompozice objektů](topics/14%20-%20Principy%20objektového%20programování,%20agregace%20a%20kompozice%20objektů.md)
 15. [Programovací jazyky - vlastnosti, srovnání, popis způsobu tvorby i běhu programů](topics/15%20-%20Programovací%20jazyky%20-%20vlastnosti,%20srovnání,%20popis%20způsobu%20tvorby%20i%20běhu%20programů.md)
 ```
 16. [Soubory a serializace - Ukládání a načítání dat, formáty souborů](topics/)
