@@ -1,24 +1,35 @@
-# Integrita dat, bezpečnost, logování, kontrola vstupů, zpracování chyb
+# [Integrita dat, bezpečnost, logování, kontrola vstupů, zpracování chyb](https://www.youtube.com/watch?v=qHiZf9P0rW0)
+*Videoprezentace není od Ječňáků, however, pán to vysvětluje hezky :3*
 
 ## O čem mluvit?
-- co je integrita dat
-	- proč je důležitá
-	- co se může stát když není
-- vysvětlit logování
-	- proč je dobré
-	- jak ho využívat
-	- dát příklad z projektů
-- co to je kontrola vstupů, proč je nutná
-- co to jsou výjímky
-- vysvětlit try/except
+- Integrita dat (+ bezpečnot)
+	- co to je?
+	- proč je důležitá?
+	- co se může stát když není?
+- Logování
+	- způsoby
+	- jak ho využívat?
+	- příklad
+- Kontrola vstupů
+	- co to je?
+	- proč je důležitá?
+	- příklad
+- Zpracování chyb
+	- výjimky
+		- co to je?
+		- try / catch / except
 
 ## Integrita dat a bezpečnost
-Integrita dat zajišťuje, aby data zůstala konzistentní a nedocházelo k neoprávněným změnám či poškození dat během zpracování nebo přenosu. Integrita dat je důležitá pro zajistění správného fungování aplikací a zabraňuje případnému poškození či ztrátě dat.
+- zajišťuje, aby data zůstala konzistentní a nedocházelo k neoprávněným změnám či poškození dat během zpracování nebo přenosu
+- důležitá pro zajištění správného fungování aplikací a zabraňuje případnému poškození či ztrátě dat
 
-**Integrita**:
-- **Kontrola datových typů** – Kontrola datových typů zabraňuje neplatným datovým typům a formátům. Pokud je předpokládána určitá hodnota datového typu a není správně zadána, může dojít k nesprávným výsledkům a narušení integrity dat.
-	- Především v dynamických p. jazycích
-	- Příklad kontroly dat. typů
+#### Integrita
+**Kontrola datových typů**
+- zabraňuje neplatným datovým typům a formátům
+- pokud je předpokládána určitá hodnota datového typu a není správně zadána, může dojít k nesprávným výsledkům a narušení integrity dat
+- především v dynamických p. jazycích
+- příklad kontroly dat. typů:w
+
 Python:
 ```python
 #Použitím podmínek
@@ -29,27 +40,53 @@ def say(phrase):
 		return "Phrase is not a string"
 ```
 
-- **Validace vstupů** – Před zpracováním vstupních dat by měla být provedena validace, aby se zabránilo vstupu neplatných nebo nebezpečných dat. Validace může zahrnovat kontrolu datového typu, formátování a kontroly na případné nebezpečné prvky, jako jsou SQL injection nebo cross-site scripting.
-	- Nejčastěji se používají regulární výrazy na kontrolu např. zadané e-mailové adresy, jestli zadané heslo splňuje podmínky, atd.
+**Validace vstupů** – 
+- před zpracováním vstupních dat by měla být provedena validace, aby se zabránilo vstupu neplatných nebo nebezpečných dat
+- validace může zahrnovat kontrolu datového typu, formátování a kontroly na případné nebezpečné prvky, jako jsou **SQL injection nebo cross-site scripting**
+- nejčastěji se používá **regex** na kontrolu 
+	- např. zadané e-mailové adresy, jestli zadané heslo splňuje podmínky, atd.
 
-- **Zálohování dat** – Zálohování dat je důležité pro zajištění integrity dat v případě, že dojde k havárii nebo ztrátě dat. Můžeme pak data lehce obnovit.
-	- Můžeme zálohovat data např. do souborů jako JSON, XML, na cloud, CD, flash disk, atd...
+**Zálohování dat** 
+- důležité pro zajištění integrity dat v případě, že dojde k havárii nebo ztrátě dat
+	- můžeme pak data lehce obnovit.
+- data lze zálohovat např. do souborů jako JSON, XML, na cloud, CD, flash disk, atd...
 
 Bezpečnost zajišťuje ochranu před různými druhy hrozeb a errorů, které můžou nastat při chodu aplikace a zabezpečení dat před neoprávněným přístupem.
 Důležitá je bezpečnost citlivých údajů uživatelů naší aplikace/programu.
 
-**Bezpečnost**:
-- **Šifrování dat** – Šifrování dat pomáhá chránit citlivá data před neoprávněným přístupem. Např. hashování hesel
+#### Bezpečnost
+**Šifrování dat** 
+	- pomáhá chránit citlivá data před neoprávněným přístupem
+	- např.: hashování hesel
 
-- **Ověřování identity** – Při práci s citlivými daty je důležité ověřit, že osoba nebo aplikace, která data požaduje, je oprávněna k přístupu. K ověřování identity se obvykle používají různé metody, jako jsou například hesla, tokeny nebo biometrické údaje.
+**Ověřování identity**
+- při práci s citlivými daty je důležité ověřit, že osoba nebo aplikace, která data požaduje, je oprávněna k přístupu
+- k ověřování se obvykle používají různé metody, jako jsou například hesla, tokeny nebo biometrika
 
-- **Zabezpečení proti útokům** – Aplikace by měly být chráněny proti různým typům útoků, jako jsou například útoky na přístupová hesla, útoky typu denial-of-service nebo útoky typu man-in-the-middle. K zabezpečení proti těmto útokům může být použita různá opatření, jako jsou například bezpečné protokoly komunikace, řízení přístupu nebo monitorování aktivit.
+**Zabezpečení proti útokům**
+- aplikace by měly být chráněny proti různým typům útoků, 
+- proti útokům můžou být použita různá opatření
+	- např.: 
+		- bezpečné protokoly komunikace
+		- ízení přístupu nebo monitorování aktivit
+		- atd...
+- druhy útoku mohou zahrnovat např.: 
+	- útoky na přístupová hesla
+	- útoky typu DDoS nebo Middle-Man
 
-- **Aktualizace a správa softwaru** – Aktualizace softwaru je důležitá pro zajištění bezpečnosti a stability aplikace. Při vývoji je tedy důležité pravidelně aktualizovat používané knihovny a spravovat celkovou infrastrukturu aplikace.
+**Aktualizace a správa softwaru** 
+- důležitá pro zajištění bezpečnosti a stability aplikace
+	- patchujeme tak objevené díry v bezpečnosti aplikace
+- při vývoji je tedy důležité pravidelně aktualizovat používané knihovny a spravovat celkovou infrastrukturu aplikace
 
 ## Logování
-Používá se k zachycení stavu programu, co v daný moment dělá, jak se chová. Můžeme zachytit např. info, warning, critical. Velmi dobrý nástroj pro debugování programu a zachycení chyb, můžeme vidět přímo v jaké chvíli se program zasekne/nastane error.
-Typické informace obsahující v jednom řádku logu jsou: **čas**, **typ**(info, debug, warning, error), **zpráva** - co v daný moment program dělá.
+- používá se k zachycení stavu programu, co v daný moment dělá, jak se chová
+- můžeme zachytit např. info, warning, critical errory, atd...
+- velmi dobrý nástroj pro debugování programu a zachycení chyb, můžeme vidět přímo v jaké chvíli se program zasekne/nastane error
+- typické informace obsahující v jednom řádku logu jsou: 
+	- **čas**
+	- **typ**(info, debug, warning, error)
+	- **zpráva** - co v daný moment program dělá.
 
 Příklad:
 ```
@@ -79,7 +116,15 @@ logger.critical("Internet is down")
 
 
 ## Kontrola vstupů
-Kontrolujeme zadané data od uživatele, zda jsou dostatečně bezpečné(hesla), jestli odpovídají požadavku(např. aby e-mail byl e-mail a ne nějaká blbost). Kdyby kontrola byla nedostačující může docházet k špatnému chodu programu, ale i třeba k vážnějším věcem jako SQL injection nebo XSS.
+- kontrolujeme zadané data od uživatele, 
+- kdyby kontrola byla nedostačující může docházet k špatnému chodu programu, ale i třeba k vážnějším věcem jako SQL injection nebo XSS.
+- kontrolujeme např.: 
+	- datový typ
+	- rozsah hodnot / délka textu
+	- platnost údajů (rod. číslo, datum, atd...)
+	- zda jsou dostatečně bezpečné (hesla)
+	- jestli odpovídají požadavku (např. aby e-mail byl e-mail a ne nějaká blbost)
+	- zda neobsahují SQL injection abychom tomu zabránili
 
 Příklady kontroly vstupů v Pythonu:
 ```python
@@ -128,7 +173,9 @@ isValid(email)
 
 
 ## Zpracování chyb
-Proces určení co se má stát když nastane **výjímka** v programu. Používá se blok try-except, který odchytne výjimku a provede nějaký kód, pokud k ní dojde. Používáme kód pro zpracování výjimek k odchycení chyb a provedení určitých kroků, aby se program nezastavil a nepřestal fungovat.
+- proces určení co se má stát když nastane **výjímka** v programu
+- používá se blok try-except *(v Ptyhonu, liší se dle jazyku)*, který odchytne výjimku a provede nějaký kód, pokud k ní dojde
+- používáme kód pro zpracování výjimek k odchycení chyb a provedení určitých kroků, aby se program nezastavil a nepřestal fungovat.
 
 Klasicky máme na výber z normálních výjímek jako *file not found*, mimo tyto výjímky si můžeme vyrobit vlastní, s vlastním chováním.
 
