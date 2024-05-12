@@ -14,7 +14,7 @@
 			- TCP - chat
 	- HTTP
 		- typy requestů
-- [Client / Server](topics/05%20-%20Architectural%20design%20patterns%20-%20MVC,%20MultiTier,%20Monolithic,%20P2P,%20Client%20x%20Server##Client%20/%20Server)
+- [Client / Server](topics/05%20-%20Architectural%20design%20patterns%20-%20MVC,%20MultiTier,%20Monolithic,%20P2P,%20Client%20x%20Server##Client)
 - Popsat tvorbu síťových aplikací
 - Vysvětlit BSD
 	- dát příklady z BSD API příkazů
