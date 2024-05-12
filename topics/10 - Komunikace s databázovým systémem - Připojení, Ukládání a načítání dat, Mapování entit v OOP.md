@@ -1,6 +1,11 @@
 # Komunikace s databázovým systémem - Připojení, Ukládání a načítání dat, Mapování entit v OOP
 
 ## O čem mluvit?
+- jak se připojit k db
+- co k tomu potřebuju
+- jakým způsobem ukládám a čtu data
+- vysvětlit ORM, k čemu je dobré
+- zmínit fasádu
 
 ## Připojení
 Většinou programovací jazyk neobsahuje nástroje k připojení na databázi, proto se nejdřív musí instalovat potřebné knihovny pro daný jazyk, tyto knihovny jsou vyvíjeny přímo vydavateli dané databáze. Takovým knihovnám se říká konektory - dovolují nám připojit se k databázi. 
