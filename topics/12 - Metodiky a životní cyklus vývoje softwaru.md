@@ -130,7 +130,7 @@ Základní čtyři kvadranty modelu (iterace = jedno projití spirálou):
 - Všechni části jsou řešené až extrémně do detajlu
 - Mezi tyto metodyky spadá například programování ve dvou
     - Kde jeden programuje a druhý ho kontroluje a snaží se oběvit chyby které by později mohli být problémové či poradit jakým způsobem danou problematiku řešit
-    - Mohou se vyměnit, výc očí víc vidí, víc hlav víc ví
+    - Mohou se vyměnit, víc očí víc vidí, víc hlav víc ví
 - Důležitá je komunikace, jednoduchost, zpětná vazba, odvaha
 - Programujeme vždy to co je potřeba
 - Jedná se o iterativní model ale "sprinty" jsou mnohem kratší
