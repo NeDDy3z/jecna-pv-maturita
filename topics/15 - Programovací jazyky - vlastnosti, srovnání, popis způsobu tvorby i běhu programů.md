@@ -62,7 +62,7 @@
 - pokud kód obsahuje chybu (odhalitelnou kompilátorem), tak kompilátor vyhodí chybu, díky tomu můžeme zjistit, kde je chyba před tím, než začneme spouštět program
 - nevýhodou je že zkompilovaný program je závislý na platformě a na architektuře procesoru či OS
 - C, C++, ...
-![](Skyrim_Mandiky_2%20(1).png)
+
 #### Interpretované jazyky
 - zdrojový kód se interpretuje postupně za běhu programu
 - interpreter čte zdrojový kód a provádí ho bez překladu na strojový kód 
