@@ -25,14 +25,14 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 9. [Integrita dat, bezpečnost, logování, kontrola vstupů, zpracování chyb](topics/09%20-%20Integrita%20dat,%20bezpečnost,%20logování,%20kontrola%20vstupů,%20zpracování%20chyb.md)
 10. [Komunikace s databázovým systémem - Připojení, Ukládání a načítání dat, Mapování entit v OOP](topics/10%20-%20Komunikace%20s%20databázovým%20systémem%20-%20Připojení,%20Ukládání%20a%20načítání%20dat,%20Mapování%20entit%20v%20OOP.md)
 11. [Komunikace v síti - tvorba síťových aplikací, Berkley socket a jeho rozhraní](topics/11%20-%20Komunikace%20v%20síti%20-%20tvorba%20síťových%20aplikací,%20Berkley%20socket%20a%20jeho%20rozhraní.md)
+12. [Metodiky a životní cyklus vývoje softwaru](topics/12%20-%20Metodiky%20a%20životní%20cyklus%20vývoje%20softwaru.md)
 ```
-12. [Metodiky a životní cyklus vývoje softwaru](topics/)
 13. [Návrhové vzory - creational design patterns, structural design patterns, behavioral patterns](topics/)
 ```
 14. [Principy objektového programování, agregace a kompozice objektů](topics/14%20-%20Principy%20objektového%20programování,%20agregace%20a%20kompozice%20objektů.md)
 15. [Programovací jazyky - vlastnosti, srovnání, popis způsobu tvorby i běhu programů](topics/15%20-%20Programovací%20jazyky%20-%20vlastnosti,%20srovnání,%20popis%20způsobu%20tvorby%20i%20běhu%20programů.md)
+16. [Soubory a serializace - Ukládání a načítání dat, formáty souborů](topics/16%20-%20Soubory%20a%20serializace%20-%20Ukládání%20a%20načítání%20dat,%20formáty%20souborů.md)
 ```
-16. [Soubory a serializace - Ukládání a načítání dat, formáty souborů](topics/)
 17. [Strojové učení - Příprava dat, Chyby v datech a bias, Korelace a kauzalita](topics/)
 18. [Strojové učení s využitím regrese a klasifikace](topics/)
 19. [Strojové učení s využitím umělých neornových sítí](topics/)
