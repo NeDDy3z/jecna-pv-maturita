@@ -17,7 +17,7 @@
   - proč je špatný
   - jak ho můžeme vyřešit
 
-**Jelikož je toto velmi obsáhlé a složité téma, doporučuji podívat se zpětně na úlohy co jsme dělali ve škole (Google Colab) a přečíst si 8 ![prezentací](ai_presentations) o AI, jsou krátké a na jejich koncích bývají otázky o kterých můžete taky mluvit u maturity.**
+**Jelikož je toto velmi obsáhlé a složité téma, doporučuji podívat se zpětně na úlohy co jsme dělali ve škole (Google Colab) a přečíst si 8 ![prezentací](https://github.com/NeDDy3z/jecna-pv-maturita/tree/main/ai_presentations) o AI, jsou krátké a na jejich koncích bývají otázky o kterých můžete taky mluvit u maturity.**
 
 ## Umělá inteligence
 
@@ -35,13 +35,13 @@ Dělíme na dva typy:
 - umí cokoliv, co dokáže člověk, nebo dokonce více
 - zatím neexistuje
 
-![ui](images/17_ui.png)
+![ui](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/17_ui.png)
 
 ## Strojové učení
 
 Strojové učení je jedním z nástrojů umělé inteligence. V současnosti nejrozšířenější metoda umělé inteligence s největšími dopady. Strojové učení je podmnožinou umělé inteligence. Zabývá se zjišťováním funkce _f_, která pro nový vstup určí odpovídající výstup.
 
-![f](images/17_strojove_uceni.png)
+![f](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/17_strojove_uceni.png)
 Zkráceně - nalezne vzor z dat, namísto toho aby mu byl přímo tento vzor poskytnut.
 Tento vzor - funkce - se pak dále zlepšuje pro co největší přesnost výstupu.
 Příklady dvojic vstupů a výstupů nazýváme _trénovací data_.
