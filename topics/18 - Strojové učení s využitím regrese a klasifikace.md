@@ -15,7 +15,7 @@ Typ řízeného učení, kde je cílem předpovídat závislou proměnnou na zá
 
 Obecně je cílem regrese sestavit model, který dokáže přesně předpovědět výstup na základě vstupních funkcí a porozumět základnímu vztahu mezi vstupními vlastnostmi a výstupem.
 
-![regrese](images/18_regrese.png)
+![regrese](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/18_regrese.png)
 
 Snažíme se proložit přímku mezi všemi body tak abychom dospěly k nejmenší odchylce mezi všemi body. Opíráme se o square error tedy chybu na druhou z kterých následně uděláme průměr a zjistíme tak chybovost modelu
 
@@ -23,7 +23,7 @@ Vstupní data by měla být pouze číselné hodnoty.
 
 Výsledek lineární regrese je reálné číslo (hodnota odpovídající hodnotě na výsledné přímce) oboje z sklearn.metrics
 
-![druhy regrese](images/18_druhy_regrese.png)
+![druhy regrese](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/18_druhy_regrese.png)
 
 ![Příklady v Google Colab](https://colab.research.google.com/drive/1mOroDym6F0vWQYk_qWma0j5KsgOQHJas?usp=sharing)
 
@@ -31,7 +31,7 @@ Výsledek lineární regrese je reálné číslo (hodnota odpovídající hodnot
 ## Klasifikace
 Technika strojového učení, která zahrnuje trénování modelu pro přiřazení štítku třídy danému vstupu. Jedná se o řízenou učební úlohu, což znamená, že model je trénován na označeném datovém souboru, který obsahuje příklady vstupních dat a odpovídajících označení tříd.
 
-![klasifikace](images/18_klasifikace.png)
+![klasifikace](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/18_klasifikace.png)
 
 *(Pokud si dobře pamatuju tak Mandík chce aby jsme znali ty vzorečky)*
 
