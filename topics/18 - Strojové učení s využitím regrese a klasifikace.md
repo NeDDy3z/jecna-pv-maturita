@@ -25,7 +25,7 @@ Výsledek lineární regrese je reálné číslo (hodnota odpovídající hodnot
 
 ![druhy regrese](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/18_druhy_regrese.png)
 
-![Příklady v Google Colab](https://colab.research.google.com/drive/1mOroDym6F0vWQYk_qWma0j5KsgOQHJas?usp=sharing)
+[Příklady v Google Colab](https://colab.research.google.com/drive/1mOroDym6F0vWQYk_qWma0j5KsgOQHJas?usp=sharing)
 
 
 ## Klasifikace
@@ -43,5 +43,5 @@ Snažím se do grafu vložit přímku tak abych rozdělil co nejlépe dvě množ
 
 Výsledek klasifikace je nějaká budě accuracy_score(y_test, y_pred) … (např.: 0.8, 0.9, 1.1) nebo classification_report(y_test, y_pred) … oboje from sklearn.metrics
 
-![Příklady v Google Colab](https://colab.research.google.com/drive/1J2j72dMF1q0Errgu2RkuMCOZUYoSiIBd?usp=sharing)
+[Příklady v Google Colab](https://colab.research.google.com/drive/1J2j72dMF1q0Errgu2RkuMCOZUYoSiIBd?usp=sharing)
 
