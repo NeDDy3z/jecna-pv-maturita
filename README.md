@@ -34,8 +34,8 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 16. [Soubory a serializace - Ukládání a načítání dat, formáty souborů](topics/16%20-%20Soubory%20a%20serializace%20-%20Ukládání%20a%20načítání%20dat,%20formáty%20souborů.md)
 17. [Strojové učení - Příprava dat, Chyby v datech a bias, Korelace a kauzalita](topics/17%20-%20Strojové%20učení%20-%20Příprava%20dat,%20Chyby%20v%20datech%20a%20bias,%20Korelace%20a%20kauzalita.md)
 18. [Strojové učení s využitím regrese a klasifikace](topics/18%20-%20Strojové%20učení%20s%20využitím%20regrese%20a%20klasifikace.md)
+19. [Strojové učení s využitím umělých neuronových sítí](topics/19%20-%20Strojové%20učení%20s%20využitím%20umělých%20neuronových%20sítí.md)
 ```
-19. [Strojové učení s využitím umělých neornových sítí](topics/)
 20. [Testování, Unit testování a dokumentace zdrojového kódu](topics/)
 21. [Typy datových struktur - Pole, Spojový seznam, Strom, Fronta, Zásobník, Halda](topics/)
 22. [Vlákna, Paralerní programování, Asynchroní metody, Concurrent design patterns](topics/)
