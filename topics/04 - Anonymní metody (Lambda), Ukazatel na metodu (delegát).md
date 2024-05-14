@@ -121,7 +121,7 @@ class Program {
 
 #### Generické delgáty
 - V C# máme předdefinované delegáty, takže většinu času není třeba definovat vlastní
-![](Skyrim_Mandiky_2%20(1).png)
+![mandik](Skyrim_Mandiky_2%20(1).png)
 #### Func
 - nemusí mít žádný vstup (0-16)
 - 1 výstup
