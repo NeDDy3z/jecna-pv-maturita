@@ -42,6 +42,7 @@ Dělíme na dva typy:
 Strojové učení je jedním z nástrojů umělé inteligence. V současnosti nejrozšířenější metoda umělé inteligence s největšími dopady. Strojové učení je podmnožinou umělé inteligence. Zabývá se zjišťováním funkce _f_, která pro nový vstup určí odpovídající výstup.
 
 ![f](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/17_strojove_uceni.png)
+
 Zkráceně - nalezne vzor z dat, namísto toho aby mu byl přímo tento vzor poskytnut.
 Tento vzor - funkce - se pak dále zlepšuje pro co největší přesnost výstupu.
 Příklady dvojic vstupů a výstupů nazýváme _trénovací data_.
