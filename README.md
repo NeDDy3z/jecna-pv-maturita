@@ -32,8 +32,8 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 14. [Principy objektového programování, agregace a kompozice objektů](topics/14%20-%20Principy%20objektového%20programování,%20agregace%20a%20kompozice%20objektů.md)
 15. [Programovací jazyky - vlastnosti, srovnání, popis způsobu tvorby i běhu programů](topics/15%20-%20Programovací%20jazyky%20-%20vlastnosti,%20srovnání,%20popis%20způsobu%20tvorby%20i%20běhu%20programů.md)
 16. [Soubory a serializace - Ukládání a načítání dat, formáty souborů](topics/16%20-%20Soubory%20a%20serializace%20-%20Ukládání%20a%20načítání%20dat,%20formáty%20souborů.md)
+17. [Strojové učení - Příprava dat, Chyby v datech a bias, Korelace a kauzalita](topics/17%20-%20Strojové%20učení%20-%20Příprava%20dat,%20Chyby%20v%20datech%20a%20bias,%20Korelace%20a%20kauzalita.md)
 ```
-17. [Strojové učení - Příprava dat, Chyby v datech a bias, Korelace a kauzalita](topics/)
 18. [Strojové učení s využitím regrese a klasifikace](topics/)
 19. [Strojové učení s využitím umělých neornových sítí](topics/)
 20. [Testování, Unit testování a dokumentace zdrojového kódu](topics/)
