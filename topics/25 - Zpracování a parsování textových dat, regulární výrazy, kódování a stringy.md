@@ -17,7 +17,7 @@
   - co to je?
   - built in metody
   - implemetace stringu
-  - proč je immutable?     
+  - proč je immutable?
 
 ## Parsování textu
 - = syntaktická analýza textu
@@ -34,7 +34,8 @@
 - regulární výraz (**Reg**ular **Ex**pression)
 - textový řetězec, který slouží jako vzor pro hledání v jiném textovém řetězci
 - <details>
-	<summary><a>Regex Cheatsheet</a></summary>
+  <summary><a>Regex Cheatsheet</a></summary>
+  
 	<img src="https://media.cheatography.com/storage/thumb/davechild_regular-expressions.750.jpg?last=1584011681">
 </details>
 
@@ -74,21 +75,22 @@
 ###### Příklad
 - chceme zakódovat a zkomprimovat zprávu ```AHOJ, JAK SE MAS, KAMARADE?```  Tato zpráva je dlouhá 27 znaků a obsahuje 13 různých symbolů.
 - následující tabulka udává jednotlivé znaky, jejich četnost a triviální kódování:
-- |Znak|Četnost|Triviální kód|
-|----|-------|-------------|
-|mezera|4|0000|
-|,|2|0001|
-|?|1|0010|
-|A|6|0011|
-|D|1|0100|
-|E|2|0101|
-|H|1|0110|
-|J|2|0111|
-|K|2|1000|
-|M|2|1001|
-|O|1|1010|
-|R|1|1011|
-|S|2|1100|
+
+| Znak   | Četnost | Triviální kód |
+|--------|---------|---------------|
+| mezera | 4       | 0000          |
+| ,      | 2       | 0001          |
+| ?      | 1       | 0010          |
+| A      | 6       | 0011          |
+| D      | 1       | 0100          |
+| E      | 2       | 0101          |
+| H      | 1       | 0110          |
+| J      | 2       | 0111          |
+| K      | 2       | 1000          |
+| M      | 2       | 1001          |
+| O      | 1       | 1010          |
+| R      | 1       | 1011          |
+| S      | 2       | 1100          |
 - zpráva by se pomocí triviálního kódování zakódovala do následujícího řetězce:
 ```0011, 0110, 1010, 0111, 0001, 0000, 0111, 0011, 1000, 0000, 1100, 0101, 0000, 1001, 0011, 1100, 0001, 0000, 1000, 0011, 1001, 0011, 1011, 0011, 0100, 0101, 0010```
 - výpočtem zjistíme, že výsledná zpráva má velikost **108 bitů**
@@ -147,11 +149,11 @@
 	- ```csharp
 	  // C#
 	  string text = "Hello, World!";
-	  string new_text = text.Replace("World", "Prdel"); // "Hello, Prdel!"
+	  string new_text = text.Replace("World", "Universe"); // "Hello, Universe!"
 	- ```php
 	  // PHP
 	  $text = "Hello, World!";
-	  $newText = str_replace("World", "Prdel", $text); // "Hello, Prdel!"
+	  $newText = str_replace("World", "Universe", $text); // "Hello, Universe!"
 - **Substring()** / **substr()**
 	- ```csharp
 	  // C#
@@ -173,11 +175,11 @@
 	  $text = "Hello, World!";
 	  $uppercase = strtoupper($text); // HELLO, WORLD!
 	  $lowercase = strtolower($text); // hello, world!
-- nebudu psát příklady na všechny, nejsme retardi přeci + tich metod je stovky
+- nebudu psát příklady na všechny, nejsme retardi přeci + tech metod je stovky
 - **Contains()**
 - **Concat()**
 	- spojí dva stringy v jeden
 - **Equals()**
 - **Split()**
 - **Trim()**
-	- odstarní všechny whitespace na začátku a konci textu
+	- odstraní všechny whitespace na začátku a konci textu
