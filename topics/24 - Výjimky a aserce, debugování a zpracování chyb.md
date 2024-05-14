@@ -3,30 +3,44 @@
 
 ---
 ## O čem mluvit?
+### 1\. **Pokročilé techniky debuggování:**
+*   **Debugger ve vývojových prostředích:**
+  *   Představení funkcí debuggerů v populárních vývojových prostředích (PyCharm, Visual Studio Code, IntelliJ IDEA atd.).
+  *   Ukázka použití breakpointů, sledování hodnot proměnných, postupného vykonávání kódu a dalších funkcí debuggerů.
+*   **Profiling kódu:**
+  *   Co je profiling a jak může pomoci při identifikaci a optimalizaci výkonnostních problémů v kódu.
+  *   Přehled nástrojů pro profiling v Pythonu (např. cProfile, line\_profiler, memory\_profiler).
+*   **Tracing:**
+  *   Vysvětlení konceptu tracing a jeho využití k monitorování průběhu vykonávání kódu.
+  *   Ukázka použití tracing pro sledování volání funkcí a průběhu dat v programu.
 
-- **Základní koncepty:** 
-  - Definice vyjímeky, aserce a chyb v programování
-  - Vysvětli:
-    - co jsou to výjimky
-    - proč jsou důležité
-    - jaký je rozdíl mezi vyjímkami a asercemi.
-- **Použití a výhody vyjímek:**
-  - Diskutuj o tom, jak a proč programátoři používají vyjímky.
-  - Uveď příklady situací, ve kterých se vyjímky hodí, a jak mohou zlepšit čitelnost a údržbu kódu.
-- **Zacházení s vyjímkami:** 
-  - Představ různé způsoby zacházení s vyjímkami, jako je try-catch blok.
-  - Vysvětli, jaké jsou doporučené postupy při zacházení s vyjímkami a jak je možné je řídit.
-- **Aserce a kontrola podmínek:**
-  - Diskutuj o tom, jak mohou aserce pomoci odhalit chyby v kódu a proč je důležité prověřovat podmínky.
-- **Debugování:**
-  - Vysvětli proces debugování a jeho důležitost při odhalování chyb v kódu.
-  - Ukaž na různé nástroje a techniky, které programátoři používají k debugování, jako jsou ladicí výpisy, breakpointy nebo ladicí prostředí.
-- **Zpracování chyb:**
-  - Diskutuj o strategiích pro zpracování chyb v kódu.
-  - Zmiň různé způsoby, jak programátoři mohou chyby identifikovat, zaznamenávat a zpracovávat, aby zajistili robustnost a spolehlivost svého softwaru.
-- **Best practices:**
-  - Zdůrazni nejlepší postupy při práci s vyjímkami, asercemi, debugováním a zpracováním chyb.
-  - To může zahrnovat psaní srozumitelných a přehledných chybových zpráv, zachování konzistence v zacházení s vyjímkami nebo pravidelné testování kódu na chyby.
+### 2\. **Best practices pro vyjímky:**
+*   **Pojmenování vyjímek:**
+  *   Doporučené postupy pro pojmenování vlastních vyjímek pro lepší čitelnost a porozumění kódu.
+*   **Práce s vnořenými vyjímkami:**
+  *   Jak zacházet s vnořenými vyjímkami a jak správně hierarchizovat výjimky pro lepší správu chyb.
+*   **Logování vyjímek:**
+  *   Důležitost logování vyjímek pro sledování a debuggování chyb v produkčním prostředí.
+  *   Představení nástrojů a knihoven pro logování vyjímek v Pythonu (např. logging module).
+
+### 3\. **Aserce:**
+*   **Aserce jako součást testování:**
+  *   Jak aserce mohou být integrovány do testovacích scénářů pro ověření správného fungování kódu.
+  *   Příklady použití asercí ve spojení s testováním jednotek.
+
+### 4\. **Praktické příklady:**
+*   **Debuggování reálných chyb:**
+  *   Ukázka řešení skutečných chyb pomocí principů defensivního programování a debuggování.
+  *   Příklady chyb z reálného světa a jejich řešení pomocí vhodných technik.
+*   **Implementace vyjímek a asercí:**
+  *   Konkrétní příklady implementace vyjímek a asercí v kódu a jejich využití při zajišťování kvality a bezpečnosti aplikace.
+
+### 5\. **Rozšíření o nástroje a prostředí:**
+*   **Specifické nástroje pro debuggování:**
+  *   Představení dalších specializovaných nástrojů pro debuggování kódu v Pythonu a jejich výhody.
+*   **Integrace s verzovacími systémy:**
+  *   Jak mohou být principy defensivního programování a debuggování integrovány do práce s verzovacími systémy jako Git.
+
 ---
 ## Defensivní programování
 - **Modulace kódu**
@@ -55,7 +69,7 @@
 </details>
 
 - Mezi nástroje pro debuggování patří například i prostý `print()`, nebo nástroje v PyCharmu, či jiném IDE
-  - Například při testování funkcí můžeme použít `print()` pro vypsání a následou kontrolu hodnoty v proměnné, před předáním proměnné do další funkce
+  - Například při debuggování funkcí můžeme použít `print()` pro vypsání a následou kontrolu hodnoty v proměnné, před předáním proměnné do další funkce
 - **Bisection debugging**
   - Zhruba v polovině kódu použijete `print()` pro získání relevantních hodnot proměnných v kódu
   - Pokud je vše tak jak má být, tak je první polovina kódu bez bugů

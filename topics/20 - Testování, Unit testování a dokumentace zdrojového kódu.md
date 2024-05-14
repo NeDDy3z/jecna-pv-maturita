@@ -1,8 +1,19 @@
-# [Testování, Unit testování a dokumentace zdrojového kódu](https://youtu.be/8X5PS8CZyIs?si=cg49xrzwNqY5VgCP)0
+# [Testování, Unit testování a dokumentace zdrojového kódu](https://youtu.be/8X5PS8CZyIs?si=cg49xrzwNqY5VgCP)
 
 ---
 ## O čem mluvit
--
+- **Testování:**
+  - Vysvětlení procesu testování a jeho důležitosti při vývoji softwaru.
+  - Identifikace různých typů testování a jejich účelu (unit testování, regression testing, integration testing).
+  - Vytváření a používání test caseů jako základního nástroje pro testování kódu.
+- **Unit testování:**
+  - Detailní vysvětlení konceptu unit testování a jeho výhod.
+  - Ukázka psaní a používání unit testů pro testování jednotlivých funkcí nebo modulů.
+  - Diskuse o nejlepších praktikách pro psaní efektivních unit testů.
+- **Dokumentace zdrojového kódu:**
+  - Důležitost a výhody dokumentace zdrojového kódu pro udržitelnost a spolupráci v týmu.
+  - Představení různých stylů dokumentace zdrojového kódu (např. docstrings, komentáře, README soubory).
+  - Ukázka psaní kvalitní dokumentace zdrojového kódu pomocí populárních konvencí a nástrojů.
 ---
 ## Testování
 - Proces při kterém porovnáváme očekavané výsledky s doopravdovými výsledky
@@ -159,3 +170,46 @@
         - **While cykly**
             - Stejné jako ostatní cykly
             - Test casy, které zachycují všechny možné způsoby opuštění cyklu
+## Dokumentace zdrojového kódu
+- **Důležitost dokumentace:**
+  - Dokumentace zdrojového kódu je klíčová pro porozumění funkčnosti, použití a účelu jednotlivých částí kódu.
+  - Dobrá dokumentace zjednodušuje údržbu, rozvoj a spolupráci v týmu, protože umožňuje rychlejší a snazší orientaci ve zdrojovém kódu.
+- **Typy dokumentace:**
+  - **Docstrings:** Jsou to řetězce umístěné na začátku funkce, třídy nebo modulu, které popisují jejich účel, vstupy, výstupy a použití.
+  - **Komentáře:** Jsou to poznámky v kódu, které vysvětlují určité části kódu, složitější algoritmy nebo zvláštní přístupy.
+  - **README soubory:** Jsou to textové soubory umístěné v kořenovém adresáři projektu, které poskytují přehled o projektu, instrukce pro instalaci a použití, a další důležité informace.
+- **Kvalita dokumentace:**
+  - **Jasnost:** Dokumentace by měla být jasná, stručná a snadno srozumitelná pro čtenáře.
+  - **Relevance:** Dokumentace by měla obsahovat pouze relevantní informace související s funkcí, třídou nebo modulem.
+  - **Aktualizace:** Je důležité udržovat dokumentaci aktuální a synchronizovanou s aktuálním stavem kódu.
+- **Konvence a standardy:**
+  - Je vhodné dodržovat konvence a standardy psaní dokumentace definované v rámci projektu nebo komunity (např. PEP 8 pro Python).
+  - Konzistentní používání formátování a stylu dokumentace usnadňuje čtení a porozumění kódu.
+- **Nástroje pro generování dokumentace:**
+  - Existuje mnoho nástrojů, které umožňují automatické generování dokumentace z docstrings (např. Sphinx pro Python).
+  - Tyto nástroje umožňují vytvářet rozsáhlou a dobře strukturovanou dokumentaci zdrojového kódu s minimálním úsilím.
+- <details><summary><a>Příklad</a></summary><hr/>
+  
+    ```Python
+    def factorial(n):
+        """Compute the factorial of a non-negative integer.
+    
+        Args:
+        n (int): A non-negative integer.
+      
+        Returns:
+        int: The factorial of n.
+      
+        Raises:
+        ValueError: If n is negative.
+        """
+    
+        if n < 0:
+            raise ValueError("Factorial is not defined for negative numbers.")
+        elif n == 0:
+            return 1
+        else:
+            return n * factorial(n - 1)
+    ```
+    <hr/>
+  </details>
