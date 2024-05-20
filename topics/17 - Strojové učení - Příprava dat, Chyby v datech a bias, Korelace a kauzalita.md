@@ -2,9 +2,9 @@
 
 ## O čem mluvit?
 
-- UI
-  - typy UI
-  - uvést příklady UI
+- AI
+  - typy AI
+  - uvést příklady AI
   - využití, problémy, ...
 - popsat strojové učení
 - jak můžeme stroj učit, metody
@@ -25,17 +25,17 @@ Inteligence projevená stroji, jde o adaptaci v novém prostředí, vykonáván�
 
 Dělíme na dva typy:
 
-**Úzká UI (slabá):**
+**Úzká AI (slabá):**
 
 - vždy řeší jeden konkrétní problém, neumí se adaptovat na nové problémy
-- všechna existující UI jsou slabou umělou inteligencí
+- všechna existující AI jsou slabou umělou inteligencí
 
-**Obecná UI (silná):**
+**Obecná AI (silná):**
 
 - umí cokoliv, co dokáže člověk, nebo dokonce více
 - zatím neexistuje
 
-![ui](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/17_ui.png)
+![AI](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/17_ui.png)
 
 ## Strojové učení
 
