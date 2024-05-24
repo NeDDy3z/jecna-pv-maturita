@@ -147,25 +147,5 @@ bool result = isUpper("hello world!!");
 #### Action
 - nemá výstup, tzv. delegát co vrací void
 ```csharp
-public class student {
-	private string name;
-	private string surname;
-	private DateTime birthday;
-	
-	public string Name { get => name; set => name = value; }
-	public string FullName { get => name +" "+ surname; }
-	public int Age { get => DateTime.Now.Year - birthday.Year - 1; }
-	
-	public Student(string name, string surname, DateTime birthday) {
-		this.name = name;
-		this.surname = surname;
-		this.birthday = birthday;
-	}
-}
-
-Student student = new Student("Vitek", "Vágner". DateTime.Parse("14.6.2000"))
-
-Console.WriteLine(student. Name); //Output: Vítek
-Console.WriteLine(student. FullName); //Output: Vítek Vágner
-Console.WriteLine(student.Age) ;//output: 19
+Tyvole něco ig
 ```

@@ -55,11 +55,6 @@ string exampleString = "example"; // exampleString is the reference
 ```
 
 ## Struktura paměti
-- struktury jsou podobné třídám, nemohou se však dědit nebo být děděny.
-- narozdíl od tříd jsou uloženy na stacku.
-- více o strukturách v otázce “Datové typy, Generika, Výčtové datové typy, Struktury, Delegáti, Eventy” od Karla Muroně.
-- taky je dobré zmínit, že všechny primitivní typy v C# jsou struktury, proto můžeme například napsat int. a zobrazí se nám různé metody. Funguje pouze v mainu, pokud to zkusíme v nějaké třídě, nic nám to neukáže, protože třída je na heapu a to znamená, že i struktura vytvořená ve třídě se uloží na heap.
-
 #### Heap (Halda)
 - je pouze jedna v celém programu
 - na haldu se ukládají všechny referenční typy 
@@ -71,7 +66,7 @@ string exampleString = "example"; // exampleString is the reference
 
 #### Stack (Zásobník)
 - druh paměti, který vlákna využívají pro provedení kódu
-	- Každé vlákno má vlastní zásobník
+	- každé vlákno má vlastní zásobník
 - je setříděný (LIFO)
 - každá metoda je vlastně blok, kde jsou uložena její data, bloky jsou vrstveny na sobě takovým způsobem, že nově přidané bloky padají na starší a tím zabraňují práci s těmi předešlými, dokud nejsou vyřešeny..
 - obsahuje pouze primitivní datové typy metod

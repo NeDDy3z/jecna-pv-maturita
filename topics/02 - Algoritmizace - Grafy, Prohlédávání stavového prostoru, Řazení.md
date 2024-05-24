@@ -17,7 +17,7 @@
 	    - porovnání na základě časové a paměťové složitosti
 
 ## Grafy
-- graf je datová strukturu popisující vztahy mezi objekty
+- graf je datová struktura popisující vztahy mezi objekty
 - grafy z oblasti teorie grafů mají široké využití v mnoha oblastech, např. úlohy o dopravním spojení, logistické problémy, optimální spojení, propustnost sítě, přenos energie, komprese dat
 - každý graf obsahuje:
 	- Body = vrcholy grafu (uzly)
