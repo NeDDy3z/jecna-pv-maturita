@@ -110,7 +110,7 @@ char cha = "2";
 
 ### Neordinální datové typy
 - není jednoznačně určen předchůdce a následovník každé hodnoty
-				![Jerma](jecna-pv-maturita/images/sh.png)
+				![Jerma](../images/sh.png)
 #### Float, Double, (for)Real (reálné čislo)
 - zápis čísla s tečkou podle anglosaské konvence (3.14)
 - nelze reprezentovat všechna čísla stoprocentně správně
