@@ -17,19 +17,25 @@
 - **Algoritmy nejsou považovány za návrhové vzory, jelikož řeší konkrétní problémy a nikoliv problémy návrhu**
 - Návrhovo vzory můžem najít taky mimo IT, např. v architektuře. Málo kdy totiž uvidíte jinak postavený dům a to je tím, že je už ověřený vzor domu, který se případně, dle potřeb upraví
 - GoF (Gank of Four) je skupinka C# nerdu, kteří napsali knihu "Design Patterns", která se zabývá klady a zápory "object-oriented programming" a návrhovíma vzorama
+- **Proč je pořebujem?**  Aby pozdější úpravy byli co nejrychlejší, bezproblémové a cool
+
 
 ## Základní typy
 - **Creational Patterns (vytvářející)**
 	- Řeší problémy související s **vytvářením objektů v systému**
-	- Snaha o **popsání postupu výběru třídy nového objektu** a zajištění správného počtu těchto objektů
-	- Většinou se jedná o dynamická rozhodnutí učiněná za běhu programu
+	- Zabývá se vytvářením a inicializací objektů
+	- Poskytuje návod k tomu, které objekty se mají v dané situaci vytvořit
+	- Používají se zejména ke zvýšení flexibility a k opakovanému použití stávajícího kódu.
+
 - **Structural Patterns (strukturální)**
 	- Skupina návrhových vzorů zaměřujících se na možnosti uspořádání jednotlivých tříd nebo komponent v systému
-	- Snahou je zpřehlednit systém a využít možností strukturalizace kódu.
+	- Strukturální návrhové vzory vysvětlují, jak sestavovat objekty a třídy do větších struktur a zároveň zachovat jejich flexibilitu a efektivitu
+	- Poskytují způsob, jak definovat vztahy mezi komponentami aplikace, a jsou užitečné zejména ve větších a složitějších systémech
+
 - **Behavioral Patterns (chování)**
-	- Chování systému
-	- Založeny na třídách nebo objektech
-	- u tříd se při návrhu řešení využívá princip dědičnosti
+	- Starají se o efektivní komunikaci mezi jednotlivými složkami systému
+	- Zabývají se interakcí mezi objekty a přidělováním odpovědností mezi ně.
+	- Cílem je, aby tyto procesy byly co nejjednodušší a nejsrozumitelnější.
 - ----
 - **Concurrency patterns (souběžné)** 
 	- Více vláknové operace
@@ -38,45 +44,35 @@
 
 ## Druhy typů
 - **Creational Patterns (Vzory tvorby)**:
-	- **Abstract Factory**:
-	    - *"groups object factories that have a common theme."*
-	    - Tento vzor poskytuje rozhraní pro vytváření rodin souvisejících nebo závislých objektů bez specifikování jejich konkrétních tříd. To umožňuje vytváření objektů s ohledem na jejich rodinné vztahy.
-	- **Singleton**:
-	    - *"restricts object creation for a class to only one instance."*
-	    - Singleton je vzor, který zajistí, že určitá třída má pouze jednu instanci a poskytuje globální přístup k této instanci. Tento vzor se používá, když chceme, aby určitá třída měla pouze jednu instanci po celou dobu běhu aplikace.
-	- **Builder**:
-	    - *"constructs complex objects by separating construction and representation."*
-	    - Slouží k abstrahování tvorby složitých objektů. A to tak, aby stejné výrobní schéma mohlo být použito pro tvorbu různých objektů. Někdy se využívá společně s návrhovím vzorem Compsite
-	- **Object Pool**:
-	    - Tento vzor umožňuje předem vytvořit a udržovat určitý počet předem vytvořených objektů v "bazénu". Namísto opakovaného vytváření nových objektů můžeme použít objekty z tohoto bazénu a po použití je vrátit zpět.
+	- **Tovární metoda**: vytváří objekty se společným rozhraním a umožňuje třídě jejich znázornění do podtřídy.
+	- **Abstraktní továrna**: vytváří rodinu příbuzných objektů.
+	- **Stavitel**: vzor pro vytváření složitých objektů krok za krokem, který odděluje konstrukci a reprezentaci.
+	- **Prototyp**: podporuje kopírování existujících objektů, aniž by se kód stal závislým na třídách.
+	- **Jedináček**: omezuje vytváření objektů třídy pouze na jednu instanci.
 
 - **Structural Patterns (Strukturální vzory)**:
-	- **Proxy**:
-	    - *"provides a placeholder for another object to control access, reduce cost, and reduce complexity."*
-	    - Proxy je vzor, který poskytuje náhradu nebo zástupce za jiný objekt, aby mohl kontrolovat přístup k tomuto objektu. Tento zástupce může provádět různé operace, jako je ověření, před a po volání reálného objektu.
-	- **Decorator**:
-	    - *dynamically adds/overrides behavior in an existing method of an object.*
-	    - Tento vzor umožňuje přidávat nové funkcionality nebo chování k existujícím objektům dynamicky, bez nutnosti změny jejich struktury. To je dosaženo pomocí kompozice, kdy jsou objekty obaleny dalšími objekty, které poskytují další funkcionalitu.
-	- **Bridge**:
-	    - *decouples an abstraction from its implementation so that the two can vary independently.*
-	    - Bridge je vzor, který rozděluje abstrakci od její implementace, takže mohou být obě nezávisle měněny. To umožňuje hierarchickou strukturu a umožňuje jednodušší rozšíření funkcí.
-	- **Adapter**:	
-		- *allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.*
-	    - Tento vzor umožňuje propojení dvou nekompatibilních rozhraní tak, aby mohly spolupracovat. To je dosaženo pomocí třetí třídy, která převádí volání mezi dvěma rozhraními.
+	- **Adaptér**: vzor, jak změnit nebo přizpůsobit rozhraní jiné existující třídě, aby nekompatibilní rozhraní mohla fungovat společně.
+	- **Most**: metoda, jak oddělit rozhraní od jednotlivé implementace.
+	- **Kompozit**: využívá stromovou strukturu pro podporu manipulace s jedním objektem.
+	- **Dekorátor**: dynamicky rozšiřuje (přidává nebo přepisuje) funkce.
+	- **Fasáda**: definuje vysokoúrovňové rozhraní pro zjednodušení používání rozsáhlého souboru kódu.
+	- **Muší váha**: minimalizuje využití paměti sdílením dat s podobnými objekty.
+	- **Zástupce**: způsob reprezentace objektu jiným objektem, který umožňuje řízení přístupu, snižuje náklady a složitost.
 
 - **Behavioral Patterns (Chování)**:
-	- **Observer** (Minecraft!!):
-		- *is a publish/subscribe pattern, which allows a number of observer objects to see an event.*
-	    - Tento vzor definuje závislost mezi objekty tak, že když se stav jednoho objektu změní, všechny jemu závislé objekty jsou automaticky informovány a aktualizovány. To je v Minecraftu například použito pro události typu "když hráč změní svou polohu".
-	- **Chain of Responsibility**:
-		- *delegates commands to a chain of processing objects.*
-	    - Tento vzor umožňuje spojení řady objektů, zvaných "handler", kde každý handler má možnost zpracovat požadavek a předat ho dalšímu handleru v řetězci, pokud nemůže požadavek zpracovat sám.
-	- **Iterator**:
-		- *accesses the elements of an object sequentially without exposing its underlying representation.*
-	    - Iterator je vzor, který poskytuje způsob, jak přistupovat k prvkům v kolekci bez nutnosti znát její vnitřní strukturu. To umožňuje iteraci přes prvky kolekce jednoduše pomocí univerzálního rozhraní.
-	- **Interpreter**:
-		- *implements a specialized language.*
-	    - Tento vzor definuje způsob, jak přeložit nebo interpretovat určitý jazyk nebo gramatiku. Tento vzor je často používán ve spojení s parserem pro analýzu a vykonání složitých jazykových konstrukcí.
+	- **Řetězec odpovědnosti**: způsob delegování příkazů na řetězec zpracovávaných objektů.
+	- **Příkaz**: zprostředkovává požadavek na příkaz do objektu.
+	- **Interpret**: podporuje použití jazykových prvků v rámci aplikace.
+	- **Iterátor**: podporuje iterativní (sekvenční) přístup k prvkům kolekce.
+	- **Prostředník**: umožňuje jednoduchou komunikaci mezi třídami.
+	- **Pamětník**: slouží k ukládání a obnově vnitřního/původního stavu objektu.
+	- **Pozorovatel**: definuje způsob oznamování objektů o změnách jiných objektů.
+	- **Stav**: jak se změní chování objektu, když se změní jeho fáze.
+	- **Strategie**: zahrne algoritmus do třídy.
+	- **Návštěvník**: definuje novou operaci na třídě, aniž by došlo k její změně.
+	- **Šablonová metoda**: definuje kostru operace a zároveň umožňuje podtřídám upřesnit některé kroky.
+
+
 
 ## Dokumentace návrhového vzoru
 -  **Název a klasifikace Vzoru:** Unikátní jméno, které dostatečným způsobem popisuje vzor, pomáhá v jeho identifikaci a odkazování se na něj.
