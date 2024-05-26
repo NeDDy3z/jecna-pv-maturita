@@ -52,6 +52,7 @@
 | úrovně komunikují pouze pomocí hodnot<br>přes síť nebo přes sériový kabel                                                    | vrstvy komunikují pomocí <br>referencí nebo hodnot |
 | dosahuje lepšího výkonu, protože je <br>na více servech                                                                      |                                                    |
 | jednotlivé vrstvy aplikace vyvíjené v této <br>architektuře od začátku, můžeme kdykoliv <br>umístit na určité fyzické stroje |                                                    |
+
 ![Multi-Tier_Multi-Layer](../images/05_multi.jpg)
 
 ## Monolithic
