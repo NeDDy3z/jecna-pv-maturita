@@ -39,7 +39,7 @@
 - častým druhem stromu je **binární strom**
 	- prvky mohou mít vždy buď 0, nebo přesně 2 potomky
 - stromy často slouží pro reprezentaci stavového prostoru
-	- prohledávání stavového prostoru se dělá přes BFS a DFS, více v dokumentu o algoritmizaci a grafech
+	- prohledávání stavového prostoru se dělá přes BFS a DFS, více v [dokumentu o algoritmizaci a grafech](02%20-%20Algoritmizace%20-%20Grafy,%20Prohlédávání%20stavového%20prostoru,%20Řazení.md)
 ## Halda/Heap
 - speciální druh binárního stromu, který splňuje podmínky
 	1. jedná se vždy o kompletní binární strom, každý prvek musí mít dvě děti, až na poslední prvek který nemusí být zcela zaplněn, a tak může mít i 1 dítě
