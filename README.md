@@ -33,7 +33,7 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 25. [Zpracování a parsování textových dat, regulární výrazy, kódování a stringy](topics/25%20-%20Zpracování%20a%20parsování%20textových%20dat,%20regulární%20výrazy,%20kódování%20a%20stringy.md)
 
 <details>
-<summary><h2>Style guide</h2></summary>
+<summary><h2>Styl++e guide</h2></summary>
 
   - každé téma má **h1** nadpis, který se shoduje s názvem souboru a obsahuje číslo maturitní otázky
 - každé téma má **h2** nadepsanou sekci "O čem mluvit?"
