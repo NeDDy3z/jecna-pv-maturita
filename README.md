@@ -25,13 +25,11 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 17. [Strojové učení - Příprava dat, Chyby v datech a bias, Korelace a kauzalita](topics/17%20-%20Strojové%20učení%20-%20Příprava%20dat,%20Chyby%20v%20datech%20a%20bias,%20Korelace%20a%20kauzalita.md)
 18. [Strojové učení s využitím regrese a klasifikace](topics/18%20-%20Strojové%20učení%20s%20využitím%20regrese%20a%20klasifikace.md)
 19. [Strojové učení s využitím umělých neuronových sítí](topics/19%20-%20Strojové%20učení%20s%20využitím%20umělých%20neuronových%20sítí.md)
-```
-20. [Testování, Unit testování a dokumentace zdrojového kódu](topics/)
-21. [Typy datových struktur - Pole, Spojový seznam, Strom, Fronta, Zásobník, Halda](topics/)
-22. [Vlákna, Paralerní programování, Asynchroní metody, Concurrent design patterns](topics/)
-23. [Vlastnosti datových struktur - Seřazenost a opakování prvků, Indexace, hashování a klíče prvků](topics/)
+20. [Testování, Unit testování a dokumentace zdrojového kódu](topics/20%20-%20Testování,%20Unit%20testování%20a%20dokumentace%20zdrojového%20kódu.md)
+21. [Typy datových struktur - Pole, Spojový seznam, Strom, Fronta, Zásobník, Halda](topics/21%20-%20Typy%20datových%20struktur%20-%20Pole,%20Spojový%20seznam,%20Strom,%20Fronta,%20Zásobník,%20Halda.md)
+22. ⚠️ [Vlákna, Paralerní programování, Asynchroní metody, Concurrent design patterns](topics/)
+23. ⚠️ [Vlastnosti datových struktur - Seřazenost a opakování prvků, Indexace, hashování a klíče prvků](topics/)
 24. [Výjimky a aserce, debugování a zpracování chyb](topics/)
-```
 25. [Zpracování a parsování textových dat, regulární výrazy, kódování a stringy](topics/25%20-%20Zpracování%20a%20parsování%20textových%20dat,%20regulární%20výrazy,%20kódování%20a%20stringy.md)
 
 <details>
