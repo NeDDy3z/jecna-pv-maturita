@@ -97,7 +97,7 @@
 	- data zpracovává sám, ale neukládá je lokálně 
 	- server slouží  jako jediné uložiště dat
 
-![client_types](../images/05_client_types.jpg)
+![client_types](../images/client_types.jpg)
 
 #### Výhody
 - jednoduchá správa (na rozdíl od P2P)
