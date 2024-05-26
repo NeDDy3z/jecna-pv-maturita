@@ -79,12 +79,14 @@
 
 #### Prohledávání do šířky - BFS
 - Breadth-First Search    
+- pro ukládání navštívených vrcholů používá frontu (FIFO)
 - prohledává stavový prostor postupně do hloubky
 	- postupuje z počátečního stavu do všech jeho sousedních stavů, poté do sousedních stavů těchto sousedních stavů a tak dále
 - vhodný pro hledání nejkratší cesty v neohodnocených grafech a prohledávání v grafech s konstantním nákladem na hrany
 
 #### Prohledávání do hloubky - DFS:
 - Depth-First Search    
+- pro ukládání navštívených vrcholů používá stack (LIFO)
 - prohledává stavový prostor do hloubky
 	- prochází co nejhlouběji do stavů, než se vrátí a prozkoumá další stavy.
 - vhodný pro hledání všech cest v grafu, řešení problémů s rekurzivní povahou a prohledávání v grafech s velkým větvícím faktorem

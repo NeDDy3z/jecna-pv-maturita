@@ -127,7 +127,7 @@
 	  return greeting
 	  
 	  goodbye = "bye"
-	  print(hello(), goodbye) # "hi bye"
+	  print(hello(), goodbye) # "hi bye"```
 
 ## Způsoby tvorby a běhu programů
 

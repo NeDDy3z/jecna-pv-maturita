@@ -1,7 +1,7 @@
 # Strojové učení s využitím regrese a klasifikace
 
 ## O čem mluvit?
-- popsat regresy
+- popsat regresi
 	- jak funguje
 	- co je jejím grafem
 	- vstupy, výstupy
