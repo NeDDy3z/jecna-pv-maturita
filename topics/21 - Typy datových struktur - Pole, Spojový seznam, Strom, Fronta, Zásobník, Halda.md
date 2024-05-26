@@ -47,7 +47,7 @@
 	3. hodnoty potomků rodiče musí mít vždy větší nebo menší hodnotu než rodič podle typu haldy
 - typy haldy:
 	- **Min-Heap**: potomci mají vždy větší hodnotu než rodič
-	- **Min-Heap**: potomci mají vždy menší hodnotu než rodič
+	- **Max-Heap**: potomci mají vždy menší hodnotu než rodič
 ![Haldy](../images/21_heap.png)
 ## Fronta/Queue
 - datová struktura s rozšířitelnou velikostí
