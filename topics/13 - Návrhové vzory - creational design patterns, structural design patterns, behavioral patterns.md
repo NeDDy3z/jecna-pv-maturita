@@ -2,14 +2,20 @@
 
 ## O čem mluvit?
 - Návrhové vzory
-	- co jsou zač
-	- proč se používají
+	- řešení známých a častých problémů 
 	- používají se jenom ve světě IT? Ne.
 	- zmínit GoF
 - Základní typy
-	- v čem se liší
-	- jejich podtypy a jak fungují
-	- dokumentace
+	- Creational
+    - zemruje se na vytváření objektů 
+    - Singleton, Factory
+	- Structual
+    - organizace tříd a objektů aby dobre komunikovali
+    - Fasade - jednotne rozhraní pro pouzivani enjakeho komplexnoho systému
+    - Adapter - umoznuje pracovani objektů s nekompatibilním rozhraním 
+	- Behavioural
+    - chicani mezi objekty a třídami 
+    - Iterator - prochazeni objekti bez znalosti jejich vnitřnosti, procházení listu třeba 
 
 ## Návrhové vzory
 - obecná řešení často vyskytujících se problémů v architektuře softwaru
