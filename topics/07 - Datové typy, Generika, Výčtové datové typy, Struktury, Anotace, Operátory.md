@@ -4,25 +4,30 @@
 
 ## O čem mluvit?
 - Datové typy a jejich rozdíly
-    - typy (číselné, řetězce, bool, objekty)
-        - složité vs. primitivní
-            - proč string není primitive (char array)
-    - velikost v paměti
-    - int vs float / decimal (Floating point)
-    - mutable vs immutable
-    - zmínit null
+    - ordinální (primitivní)
+        - int, char, bool, byte
+    - neordinalni
+        - string, float, double, real
+    - mutable a immutable (string)
+    - null (prazdna hodnota)
 - Generika
-    - využití
-    - příklad
-    - výhody / nevýhody
+    - obecny datovy typ
+    - např v Listu (uživ. si zvoli co bude list držet)
+    - generické třídy 
 - Výčtové datové typy (ENUM)
-    - jak to funguje?
-    - příklady využití
+    - kdyz chceme mit na vyber z fixnich dat
+    - např: dny v týdnu, měsíce, stavy 
 - Anotace
-    - využití => Kde jsem to viděl? (unit testy)
-    - k čemu slouží?
+    - u unit testů
+    - popisuje ide co je co
+    - @override
 - Operátory
-    - typy operátorů (aritmetické, relační, bitové, logické, ternární, přiřazovací)
+    - typy operátorů
+        - aritmetické +,-,*,/
+        - relační >,<,<=,>=
+        - logické and,or,xor
+        - ternární if
+        - přiřazovací (=)
     - operator overloading
 
 ## Datové typy
