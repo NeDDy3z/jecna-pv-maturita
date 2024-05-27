@@ -2,13 +2,11 @@
 
 ## O čem mluvit?
 - OOP
-	- co to je?
-	- principy
-	- výhody, nevýhody
-	- popsat jednotlivé znaky OOP
-	- Polymorfismus, dědičnost, zapouzdření, abstrakce, znovupoužitelnost kodu...
+  - dědičnost
+  - zapouzdření
+  - polymorfismus
+  - piseme kod ktery muzeme pouzivat znovu a znovu
 	- agregace a kompozice
-	- uvést nějaký příklad
 
 ## Objektově orientované programování (OOP)
 - jedno z programovacích paradigmat
