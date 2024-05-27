@@ -2,28 +2,37 @@
 
 ## O čem mluvit?
 - Reference a ukazatele
-   - co je to?
-   - adresa proměnné
-   - reference vs ukazatel (na adresu) vs Kopie proměnné
+   - reference - odkazuje na obejkt na heapu
+   - ukazatel - na misto v paměti (u LL jazyků)
 - Struktura paměti programu
-     - Heap vs. Stack
-	     - rozdíly mezi nimi, jak ukládají proměnné, k čemu jsou
+     - Heap
+         - je jeden
+         - obsahuje referenční data (třída, enum, string, interface)
+     - Stack
+         - každé vlakno ma svoje
+         - ukladaji se zde primitivni data (int, char, bool, byte)
+         - proměnné z metod patri sem
 - Správa paměti programu
    - garbage collector
-   - manuální správa paměti   
+      - spouští se kdyz dojde pamet v nějaké gen
+      - můžu ho vyvolat i zastavit (py)
+   - manuální správa paměti
+       - alokování dat k paměti 
 - Garbage collector 
-    - jak funguje?
-    - k čemu slouží?
-    - nachází se ve všech jazycích?
+    - gen 0,1,2
+    - spouští se sám 
+    - neni všude jen v high level
 
 ## Reference a Pointer
 #### Reference 
 - odkaz na proměnnou nebo instanci objektu na haldě
-	- nemůže odkazovat na null
+	- nemůže odkazovat na null (jak kde)
 - abstraktní datový typ
 - abstraktnější variantou ukazatele, ukazatel nemá žádnou informaci o objektu v operační paměti
 - zvyšují flexibilitu
 - snadnější sdílení mezi kódem
+
+C#:
 ```csharp
 Example exampleObject = new Example(); // exampleObject is the reference
 
