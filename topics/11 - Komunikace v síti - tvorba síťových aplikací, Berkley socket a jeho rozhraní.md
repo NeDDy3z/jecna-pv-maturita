@@ -3,21 +3,26 @@
 
 ## O čem mluvit?
 - Protokol
-	- co to je?
-	- vyjmenovat různé protokoly
-	- TCP a UDP
-		- jak fungují?
-		- princip
-		- **rozdíly** oproti sobě
-		- využití
-			- UDP - videostreaming
-			- TCP - chat
+    - diky nim komunikujeme pres síť
+    - TCP
+        - spolehlivý
+        - packety na sebe čekají
+        - 3way handshake
+        - WWW, Email, HTTP
+    - UDP
+        - nespolehlivý
+        - chrlí
+        - videostream, voip, online hry
 	- HTTP
 		- typy requestů
+        - CRUD
+        - posílání dokumentů 
 - [Client / Server](05%20-%20Architectural%20design%20patterns%20-%20MVC,%20MultiTier,%20Monolithic,%20P2P,%20Client%20x%20Server.md)
 - Popsat tvorbu síťových aplikací
-- Vysvětlit BSD
-	- dát příklady z BSD API příkazů
+- Barckley socket
+    - builtin v každém unixovem systému včetně windows
+	- standart pro komunikaci v síti je to api pres které komunikujeme
+   - socket, bind, listen, connect, send, recv, write, read,...
 
 ## Komunikace v síti
 - komunikace v síti probíhá díky protokolům
