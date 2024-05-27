@@ -3,10 +3,17 @@
 ## O čem mluvit?
 - OOP
   - dědičnost
+     - pro tridy se stejnými/podobnými vlastnostmi
+     - ulehčení práce
+     - např.: trida zamestnanec dědí od tridy člověk 
   - zapouzdření
+     - k nějakému kodu se nemůže dostat celý porgram
+     - private, public, protected, internal, static
   - polymorfismus
-  - piseme kod ktery muzeme pouzivat znovu a znovu
-	- agregace a kompozice
+     - muzeme tak volat metodu s různými parametry
+  - agregace a kompozice
+     - agregace je volna vazba
+     - kompozice neni volná, objekty nemuzou fungovat bez sebe
 
 ## Objektově orientované programování (OOP)
 - jedno z programovacích paradigmat
