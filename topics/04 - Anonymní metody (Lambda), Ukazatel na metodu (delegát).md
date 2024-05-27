@@ -3,11 +3,11 @@
 
 ## O čem mluvit?
 - Anonymní metoda (Lambda)
-    - co to je?
+    - anonymni metoda 
     - syntax
-    - příklady využití
+    - pouzivana treba na hledani v poli
 - Ukazatel na metodu (Delegát)
-    - co to je?
+    - ukazatel na metodu
     - typy delegátu v C# - (Func, Action, Predicate)
     - využití -> Callback, Event
 
