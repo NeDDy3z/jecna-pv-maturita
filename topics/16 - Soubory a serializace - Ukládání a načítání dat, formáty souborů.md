@@ -1,15 +1,13 @@
 # Soubory a serializace - Ukládání a načítání dat, formáty souborů
 
 ## O čem mluvit?
-- jak se ukládají a načítají data
-- ukázat nebo popsat některé syntaxe souborů
-	- json
-	- ini
-	- csv
-- k čemu se jednotlivé typy používají
+- typycky mám nějaký file reader, kterym přečtu co je v souboru 
+- mám: txt, json, ini, csv
+- pro převod dic na json potřebujeme (v py) json.dump(dic) / pro čtení json.read()
+- nesmí se zapomínat na vyjímky (try catch okolo readeru)
 - jak probíha ser./deser.
-	- k čemu je dobrá
-	- do čeho se uloží ser. objekt
+	- proces přeměny objektu na stream bytů (v py se používá pickle knihovna) 
+	- ukládáme do byte souboru
 
 ## Ukládání a načítání dat
 Při ukládání proměnných v našem programu, proměnné se uloží pouze na dobu chodu programu. Tyto data jsou ztracena po vypnutí programu. Proto, na uchování dat na delší dobu, se používají soubory. Například uložení stavu herní postavy - kolik má životů, atd. Tyto data jsou načteny při startu programu ze souboru, do kterého byli uloženy.
