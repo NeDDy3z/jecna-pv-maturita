@@ -60,10 +60,20 @@ Pomocí strojového učení se řeší problémy jako předpověď počasí, cen
 
 ### Typy učení:
 
-- **Učení s učitelem** („supervised learning“) - pro vstupní data je určen správný výstup (třída pro klasifikaci nebo hodnota pro regresi).
-- **Učení bez učitele** („unsupervised learning“) - ke vstupním datům není známý výstup.
-- **Kombinace učení s učitelem a bez učitele** („semi-supervised learning“) - část vstupních dat je se známým výstupem, ale další data, typicky větší, jsou bez něj.
-- **Zpětnovazebné učení** („reinforcement learning“), též učení posilováním, funguje na principu agenta, který interaguje s prostředím a za své akce dostává odměnu či trest. Agent se snaží maximalizovat odměnu. … umělá inteligence ve hrách samořiditelné drony apod.
+- **supervised learning**
+  - pro vstupní data je určen správný výstup
+  - cílem je aby pochopil data v kontextu
+  - data jsou v datasetu určena
+    - např. v tabulce máme označeny sloupce jako: cenu, rozlohu, počet pokojů
+- **unsupervised learning**
+  - ke vstupním datům není známý výstup
+  - cílem je aby našel skryté nebo nejasné vztahy/vzorce mezi neoznačenými daty
+  - data **ne**jsou v datasetu určena
+    - např. v tabulce není nic označené, je to prostě hromada dat
+- **semi-supervised learning**
+  - část vstupních dat je se známým výstupem, ale další data, typicky větší, jsou bez něj
+- **reinforcement learning**
+  - též učení posilováním, funguje na principu agenta, který interaguje s prostředím a za své akce dostává odměnu či trest. Agent se snaží maximalizovat odměnu. … umělá inteligence ve hrách samořiditelné drony apod.
 
 ### Základní druhy úloh:
 
