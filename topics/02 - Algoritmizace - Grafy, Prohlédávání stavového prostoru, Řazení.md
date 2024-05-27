@@ -2,14 +2,16 @@
 
 ## O čem mluvit?
 - Grafy
-- Využití
-- Typy
+    - využití
+    - hrany, vrcholy
+    - typy:
 	- orientovaný / neorientovaný
 	- hodnocený / neohodnocený
 	- úplný / neúplný
 	- cyklický / strom
 - Prohledávaní stavového prostoru
 	- k čemu je stavový prostor?
+        - je to mnozina vsech možných konfigurací 
 	- BFS / DFS
 - Řazení 
 	- k čemu je dobré
