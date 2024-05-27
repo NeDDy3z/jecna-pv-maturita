@@ -1,16 +1,18 @@
 # [Programovací jazyky - vlastnosti, srovnání, popis způsobu tvorby i běhu programů](https://youtu.be/zVIofQ_HYoI?list=PLmW7bUCTvOeTSag9ZZBYXdHs_iEwB4OHM)
 
 ## O čem mluvit?
-- Co je programovací jazyk?
-	- různé jazyky
-	- využití jazyků v různých zaměřeních
+- Programovací jazyky
+	- zadávání instrukcí počítači 
+	- existuje jich mnoho na jina použití 
 - Kompilace kódu
-    - Kompilovaný / Interpretovaný / Virtuální stroj (např. JVM) jazyky
+    - Kompilovaný - předělán na strojovy kód ktery CPU chápe, trvá to, závislý na platformě 
+    - Interpretovaný - čte a převádí kod bez překladu instrukce pro pc, instantní , kdekoliv, Python
+    - Hybridní - obojí shora, C#
 - Strojový kód
 - Dělení podle abstrakce
     - Vyšší (Java..)
-        - IMPERATIVNÍ
-        - NEIMPERATIVNÍ
+        - Imperativní - strukturovany, oop, jak se to ma dělat 
+        - Deklarativní - co se ma delat, funkční, logické, sql
     - Nižší (Assembler..)
 - *Objektové / Procedurální / Funkcionální jazyky*
 - *Staticky / Dynamicky typované jazyky (JAVA vs Python..)*
