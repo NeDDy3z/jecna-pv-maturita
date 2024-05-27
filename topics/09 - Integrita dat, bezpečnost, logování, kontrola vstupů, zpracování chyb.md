@@ -3,20 +3,21 @@
 
 ## O čem mluvit?
 - Integrita dat (+ bezpečnot)
-	- co to je?
-	- proč je důležitá?
-	- co se může stát když není?
+	- zajistujeme konzistentní data
+	- zabraňujeme špatným vstupům
+        - ověřujeme identitu
+        - sifrujeme data
+	- branime se proti útokům např sqlinjection
 - Logování
-	- způsoby
-	- jak ho využívat?
-	- příklad
+	- zachytávání chyb
+	- sledujeme co program dělá v čas selhání 
 - Kontrola vstupů
-	- co to je?
-	- proč je důležitá?
-	- příklad
+	- důležité pro integritu dat
+	- kontrolujeme třeba typ
+	- regexy - email, tel číslo...
 - Zpracování chyb
 	- výjimky
-		- co to je?
+		- pri vstupech, čtení souborů, zápis souborů, prostě všude 
 		- try / catch / except
 
 ## Integrita dat a bezpečnost
