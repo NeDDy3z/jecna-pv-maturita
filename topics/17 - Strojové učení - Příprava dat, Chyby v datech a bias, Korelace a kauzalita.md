@@ -63,9 +63,18 @@ Pomocí strojového učení se řeší problémy jako předpověď počasí, cen
 
 ### Základní druhy úloh:
 
-- **Klasifikace** rozděluje data do dvou nebo několika tříd (učení s učitelem)
-- **Regrese** odhaduje číselné hodnoty výstupu podle vstupu (učení s učitelem)
-- **Shlukování** zařazuje objekty do skupin s podobnými vlastnostmi (učení bez učitele) … využití například na sociálních sítí
+- **Klasifikace**
+   - supervised
+   - rozděluje data do dvou nebo několika tříd na základě vstupu
+   - např.: je to spam e-mail?, klasifikace obrázků jako kočka nebo pes, diagnostika nemocí na základě zdravotních údajů
+- **Regrese**
+   - unsupervised
+   - odhaduje číselné hodnoty výstupu na základě vstupu
+   - např.: cena domu
+- **Shlukování**
+   - unsupervised
+   - zařazuje objekty do skupin s podobnými vlastnostmi
+   - napr.: na sociálních sítí
 
 ## Příprava dat
 
