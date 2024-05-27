@@ -2,13 +2,14 @@
 
 ## O čem mluvit?
 - shrnout proces vývoje sw
-- uvést princip metodik
-	- k čemu jsou dobré
+  - řízení vývoje
+  - dělíme vývoj do části
+  - postupujeme logicky, po navrhu nemuze byt implementace
 - uvést jednotlivé metodiky
-	- jejich plusy a mínusy
-	- kde se používají
-	- popsat je a jejich rozdíly
-	- možná nakreslit nějaký diagram (waterfall je easy)
+	- waterfall - dobrý na male projekty a pokud je na zacatku vse naplánováno 
+	- prototypocaci - delame prototypy na zaklade zakaznikovich představ 
+	- agilní/inkrementální - tvoříme appku pi částech ve sprintech, nakonci každého je vždy "hotový" produkt, casto v kombinaci s prototypovycim
+	- možná nakreslit nějaký diagram
 - **NEZMIŇOVAT SCRUM**
 
 ## Proces vývoje softwaru
