@@ -10,6 +10,10 @@
    - unsupervised - ke vstupu neni výstup
    - semi-supervised - mix obojiho nahoře
    - reinforcement - dostava odměny/trest, ai ve hrách, autopilot dronu?
+- druhy výstupů
+   - klasifikace - deleni dle vstupnich rysů
+   - regrese - číselná hodnota dle vstupu
+   - shlukování - do skupin dle podobnosti
 - jak se připravují data (dělali jsme to na hodinách)
   - chyby v datech a čištění
   - zbavujeme se null, výchylek, zbytecnych atributů 
@@ -68,7 +72,7 @@ Pomocí strojového učení se řeší problémy jako předpověď počasí, cen
    - rozděluje data do dvou nebo několika tříd na základě vstupu
    - např.: je to spam e-mail?, klasifikace obrázků jako kočka nebo pes, diagnostika nemocí na základě zdravotních údajů
 - **Regrese**
-   - unsupervised
+   - supervised
    - odhaduje číselné hodnoty výstupu na základě vstupu
    - např.: cena domu
 - **Shlukování**
