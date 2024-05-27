@@ -1,3 +1,4 @@
+# 23 - Vlastnosti datových struktur - Seřazenost a opakování prvků, Indexace, hashování a klíče prvků
 #### 1. Úvod do datových struktur
 
 - Datová struktura je způsob, jak organizovat a ukládat data tak, aby se s nimi dalo efektivně pracovat
