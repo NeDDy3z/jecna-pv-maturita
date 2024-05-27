@@ -3,19 +3,21 @@
 ## O čem mluvit?
 
 - AI
-  - typy AI
-  - uvést příklady AI
+  - typy: úzká (řeší konkretni problém), silná (neexistuje, dokaze vše)
   - využití, problémy, ...
-- popsat strojové učení
-- jak můžeme stroj učit, metody
-- popsat jak se připravují data (dělali jsme to na hodinách)
-- chyby v datech
-  - jakých dat je potřeba se zbavit
-  - co může chyba v datech způsobit
-- vysvětlit korelaci x kauzalitu
-- co je to bias
-  - proč je špatný
-  - jak ho můžeme vyřešit
+- Strojové učení
+   - supervised - pro vstupni data je spravny výstup 
+   - unsupervised - ke vstupu neni výstup
+   - semi-supervised - mix obojiho nahoře
+   - reinforcement - dostava odměny/trest, ai ve hrách, autopilot dronu?
+- jak se připravují data (dělali jsme to na hodinách)
+  - chyby v datech a čištění
+  - zbavujeme se null, výchylek, zbytecnych atributů 
+  - omezujeme na nějaký rozptyl
+- bias
+   - ovlivnění výsledků 
+  - kdyz dame modelu data o drahych autech nebude mít data k tim levným 
+- korelace a kauzalita
 
 **Jelikož je toto velmi obsáhlé a složité téma, doporučuji podívat se zpětně na úlohy co jsme dělali ve škole (Google Colab) a přečíst si 8 ![prezentací](https://github.com/NeDDy3z/jecna-pv-maturita/tree/main/ai_presentations) o AI, jsou krátké a na jejich koncích bývají otázky o kterých můžete taky mluvit u maturity.**
 
