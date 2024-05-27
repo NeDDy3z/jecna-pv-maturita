@@ -1,15 +1,16 @@
 # [Dědičnost, method overriding, function overloading](https://youtu.be/x6Ka2BdxwT8?list=PLmW7bUCTvOeTSag9ZZBYXdHs_iEwB4OHM)
 
 ## O čem mluvit?
-- Dědičnost 
-	- základní princip dědičnosti
-	- kde se používá a její využití v OOP
-	- výhody, nevýhody
-	- příklady
-- Method overriding / Function overloading
-	- co to je?
-	- proč to používat
-	- příklad	
+- Dědičnost
+        - základ OOP
+	- dědime od tříd s kterymi maji child tridy společně funkce / vlastnosti
+	- můžeme tomu zabranit pomocí sealed
+- Method overriding
+        - overriduju často tostring
+        - prepisujeme metody s rodičovské třídy 
+- Function overloading
+	- děláme více funkcí se stejným jménem (dáme jí pak víc vstupů třeba)
+	- např více konstruktorů 
 
 ## Dědičnost (Inheritance)
 - spolu se zapouzdřením a polymorfismem je jednou ze tří primárních charakteristik OOP 
