@@ -2,16 +2,21 @@
 
 ## O čem mluvit?
 - Připojení k DB
-	- jak se k ní připojit
 	- connection string
-	- co k tomu potřebuju
+        - knihovny od vývojářů DB
+        - TCP
+	- potřebujeme ip,port,user,psswd,...
 - Ukládání a načítaní dat
-	- jak?
-- Mapování v OOP
-	- ORM
-		- k čemu je dobré
-		- objektový model namísto psaní SQL queries
-- Zmínit fasádu
+	- connection string
+        - queries
+- Mapování v OOP s ORM
+	- převádění dat z DB -> objekty v programu
+        - nemapujeme vsechny (např poznámky)
+        - dulezita soucast pri pesci s DB
+- Fasáda
+        - návrhový vzor
+        - zjednodušuje komunikaci uživ. s DB
+        - treba si jdelam metody na kazdou akci s DB
 
 ## Připojení
 - většinou programovací jazyk neobsahuje nástroje k připojení na databázi
