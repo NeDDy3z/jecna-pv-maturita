@@ -18,6 +18,9 @@
    - ovlivnění výsledků 
   - kdyz dame modelu data o drahych autech nebude mít data k tim levným 
 - korelace a kauzalita
+   - korelace je když např. žáci maji dobré vysledky a hodne spánku ale neni to zaroven kauzalitou (ma to by byl treba vetsi výzkum)
+   - kauzalita je když např.: pití za volantem způsobuje vice nehod
+   - pro kauzalitu je potrebna korelace
 
 **Jelikož je toto velmi obsáhlé a složité téma, doporučuji podívat se zpětně na úlohy co jsme dělali ve škole (Google Colab) a přečíst si 8 ![prezentací](https://github.com/NeDDy3z/jecna-pv-maturita/tree/main/ai_presentations) o AI, jsou krátké a na jejich koncích bývají otázky o kterých můžete taky mluvit u maturity.**
 
