@@ -14,6 +14,8 @@
   - agregace a kompozice
      - agregace je volna vazba
      - kompozice neni volná, objekty nemuzou fungovat bez sebe
+  - interface
+     - používáme když vice trid používá stejnou metodu, v danych tridach ji pak upravujeme
 
 ## Objektově orientované programování (OOP)
 - jedno z programovacích paradigmat
