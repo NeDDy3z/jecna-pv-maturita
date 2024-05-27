@@ -2,22 +2,22 @@
 
 ## O čem mluvit?
 - Rekurze - *tu brát ze začátku teoreticky pak až přejít na tu v programování*
-	- co to je? 
+	- objekt vola sam sebe
     - využití
 	- Typy rekurze
-		- přímé
-		- nepřímé
+		- přímá / nepřímá (volá sebe / volá b, b volá a)
+		- lineární / stromová (vola sebe / vola jich víc)
 - Brute force - *ten téměř citovat*
-    - co to je?
-    - využití
-    - časová náročnost
+    - deterministický algoritmus
+    - pouzivan na prolomení kódu 
+    - časová náročnost je astronomická 
 - Heuristiky
-    - co to je?
-    - založené na zkušenostech, intuici, znalostech o problému
-    - příklad
+    - zkusmé řešení problémů 
+    - nevím jak de dostat k výsledku 
+    - můžu diky tomu upřesnit např Brute Force 
 - Determenistické vs Nedeterministické algoritmy - *tady nejde říct mnoho, je to "třešnička na dortu"*
-    - co to je?
-    - příklad
+    - det. = vzdy stejný výsledek za stejnych podmínek 
+    - nedet. = vzdy jiný výsledek za stejných podmínek 
 
 ## Rekurze
 - tj. když objekt je součástí sám sebe
