@@ -86,6 +86,42 @@
 	- postupuje z počátečního stavu do všech jeho sousedních stavů, poté do sousedních stavů těchto sousedních stavů a tak dále
 - vhodný pro hledání nejkratší cesty v neohodnocených grafech a prohledávání v grafech s konstantním nákladem na hrany
 
+Python:
+```python
+'''
+Graf:
+  A
+/ | \  
+B C D  
+| | |  
+E F G
+'''
+graph = {  
+    'A': ['B', 'C', 'D'],  
+    'B': ['A', 'E'],  
+    'C': ['A', 'F'],  
+    'D': ['A', 'G'],  
+    'E': ['B'],  
+    'F': ['C'],  
+    'G': ['D']  
+}  
+  
+def bfs(graph, start):  
+    visited = set()  
+    queue = [(start, 0)]  
+  
+    while queue:  
+        node, depth = queue.pop(0)  
+        if node not in visited:  
+            print(f"{node} : {depth}")  
+            visited.add(node)  
+            for neighbor in graph[node]:  
+                queue.append((neighbor, depth +1))  
+  
+bfs(graph, 'A')
+# Output: A(0), B(1), C(1), D(1), E(2), F(2), G(2)
+# A je objekt/stav, číslo je hloubka
+```
 #### Prohledávání do hloubky - DFS:
 - Depth-First Search    
 - pro ukládání navštívených vrcholů používá stack (LIFO)
@@ -108,6 +144,20 @@
 - porovná vždy 2 sousední prvky 
 	- pokud je nižší prvek nalevo od vyššího, prohodí je a pokračuje k dalšímu indexu
 	- pokud jsou čísla správně (nižší napravo od vyššího), pokračuje k dalšímu indexu bez úpravy
+
+Python:
+```python
+list = [0, 5, 3, 99, -2, 1]  
+  
+def bubbleSort(list):  
+    for i in range(len(list)):  
+        for j in range(len(list) - i - 1):  
+            if list[j] > list[j+1]:  
+                list[j], list[(j+1)] = list[(j+1)], list[j]  
+# Časová složitost je n na 2 (lebo 2 for cykly v sobě)
+
+bubbleSort(list)
+```
 
 ![BubbleSort](../images/02_bubblesort.png)
 

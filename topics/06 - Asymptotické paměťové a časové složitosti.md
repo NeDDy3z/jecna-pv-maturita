@@ -48,6 +48,9 @@
 		- ale ne pokud bude trvat i tak pět let...
 	- např.: skok na index v poli 
 		- je jedno, kolik bude prvků, první bude vždy 1., osmý vždy 8.
+		- ```python
+		  pole = [1,2,3,4]  
+		  print(pole[2])
 - **Logaritmická - Θ (Log n)**
 	- rozděl a panuj 
 		- (nedělí tak dlouho dokud nezůstanou jen dvojice na rozdíl od Linearitmetické)
@@ -63,6 +66,10 @@
 	- např.: 
 		- vypsání všech prvků v pol, tolikrát, kolik je prvků
 			- pokud se 100.000 prvků se vypíše za sekundu, 1MIL prvků se vypíše za deset sekund
+		- ```python
+		  pole = [1,2,3,4]
+		  for p in pole:  
+			  print(p)
 - **Linearitmická Θ (n * log n)**
 	- rozděl a panuj
 		- vezme nesetříděné pole a dělí je na poloviny tak dlouho, dokud nejsou pouze dvojice
@@ -75,6 +82,11 @@
 	- např.: 
 		- [Bubble sort](02%20-%20Algoritmizace%20-%20Grafy,%20Prohlédávání%20stavového%20prostoru,%20Řazení####%20Bubble%20sort) a [Insertion sort](02%20-%20Algoritmizace%20-%20Grafy,%20Prohlédávání%20stavového%20prostoru,%20Řazení####%20Insertion%20sort)
 		- dva for-cykly v sobě
+		- ```python
+		  pole = [1,2,3,4]
+		  for p in pole:  
+			  for pp in range(len(pole)):  
+				  print(pp)
 - **Faktoriálová – Θ (n!)**
 	- řešení čehokoliv pomocí hrubé síly - [Brute force](03%20-%20Algoritmizace%20-%20Rekurze,%20Brute%20Force,%20Heuristiky,%20Nedeterministické%20algoritmy##%20Brute%20force)
 	- na grafech udávána vždy jako nejhorší možnost
@@ -96,12 +108,19 @@
 		- for-cyklus, kde tiskneme „i“ 
 			- v tomto případě se totiž s pamětí neděje nic jiného než že jsme jednou vytvořili proměnnou i a neustále jí jen přepisujeme (upravujeme její obsah) a tiskneme 
 				- = paměťová složitost je konstantní
+		- ```python
+		  pole = [1,2,3,4]   
+		  for p in pole:  
+			  print(p)
 - **Lineární – Θ (n)**
 	- např.: 
 		- rekurzivní řešení faktoriálu 
 			- pokud máme například faktoriál 6, je to 6x5x4x3x2x1 – Tudíž pro faktoriál šesti potřebujeme šestkrát uchovat největší hodnotu
 		- ArrayList
 			- jak arraylist roste, roste i jeho potřeba pro paměť
+		- ```python
+		  pole = [1,2,3,4]   
+		  pole.append(5)
 - **Kvadratická - Θ (n2)**
 	- např.: 
 		- 2D Array

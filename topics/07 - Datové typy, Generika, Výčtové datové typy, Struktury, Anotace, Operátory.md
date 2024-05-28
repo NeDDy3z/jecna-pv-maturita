@@ -100,7 +100,7 @@ int neg_num = -32;
 
 Python:
 ```python
-character = "a"
+character = 'a'
 ```
 
 C:
@@ -110,7 +110,7 @@ char ch = "$";
 
 C#:
 ```csharp
-char cha = "2";
+char cha = '2';
 ```
 
 ### Neordinální datové typy
@@ -135,7 +135,7 @@ Python:
 ```python
 pi = 3.14
 f = 1.45e3
-e = float(2) #bude to 2.0
+r = float(2) #bude to 2.0
 ```
 
 C:
@@ -160,14 +160,8 @@ Python:
 ```python
 nothing = None
 
-if nothing is None:
-	print("nothing")
-
 def no_ret_fun():
 	pass
-
-if no_ret_fun() is None:
-	print("nothing again")
 ```
 
 C:
@@ -211,6 +205,14 @@ string s = null;
 				  listik.Add(prvek);
 			  }
 		  }
+		- ```python
+		  from typing import TypeVar, List  
+		  T = TypeVar('T')  
+		  def process_items(items: List[T]) -> List[T]:  
+			  return [item for item in items]  
+		  
+		  result = process_items([1, 2, 3])  
+		  print(result)
 		- Tzn. Vytvořil jsem si generickou třídou pomocí špičatých závorek u jména třídy a dále nějakou příkladovou ukázku použití - vlastní třída pro práci s listem.
 
 - Obecně nezáleží, jaké písmeno do špičatých závorek zvolíme. Nejčastěji se používá T.
@@ -330,7 +332,7 @@ class Program
 ## Anotace
 - dodání metadat k funkcím, proměnným, třídám, ...
 - poskytují dodatečné informace o jejich zamyšlením použití nebo chování. Anotace jsou obvykle používány kompilátory, interprety nebo jinými nástroji k uplatňování omezení, optimalizaci kódu nebo generování dokumentace.
-- běžně začínají znakem @ (např. klasický @override)
+- běžně začínají znakem **@ (např. klasický @override)**
 
 Mohou sloužit k:
 - určení datového typu parametru funkce
@@ -340,19 +342,20 @@ Python:
 ```python
 def say_phrase(phrase : str) -> str:
 	return f"{phrase}"
+# Anotace je ": str" indikující že input má být string
+#   a zároveň "-> str:" jenž indikuje že return bude string
 ```
 
-- validační anotace k ověření vstupních parametrů zda nejsou Null
-
-Java:
+Validační anotace k ověření vstupních parametrů zda nejsou Null
+- Java:
 ```java
 public void process(@NotNull String data) {
     ...
 }
 ```
 
-- serializační anotace k naznačení jak se má kód chovat při serializaci/deserializaci dat
-Java:
+Serializační anotace k naznačení jak se má kód chovat při serializaci/deserializaci dat
+- Java:
 ```java
 public class User {
     @JsonProperty("username")
@@ -361,19 +364,21 @@ public class User {
 }
 ```
 
-- dokumentační anotace k automatické generaci dokumentace
-Java:
-```java
-/**
- * Vrací součet dvou čísel.
- * 
- * @param a První číslo.
- * @param b Druhé číslo.
- * @return Součet a a b.
- */
-public int add(int a, int b) {
-    return a + b;
-}
+Dokumentační anotace k automatické generaci dokumentace
+- Python:
+```python
+def add(x: int, y: int) -> int: # ": int) -> int" je anotace  
+    """  
+    Add two numbers together.  
+        
+        Args:
+	        x (int): The first number.
+	        y (int): The second number.  
+        
+        Returns:
+	        int: The sum of x and y.    
+	"""    
+	return x + y
 ```
 
 Je mnoho dalších anotací.
@@ -412,17 +417,27 @@ Je mnoho dalších anotací.
 #### Ternární
 - Zjednodušeně: zapsání if podmínky na jeden řádek :D
 
-Příklad:
+C#:
 ```java
 if (podmínka) {
     výraz1;
 } else {
     výraz2;
 }
-```
-Můžeme zapsat takto:
-```java
+
+// =>
 podmínka ? výraz1 : výraz2;
+```
+
+Python:
+```python
+if (12 == 12):
+	print("yep")
+else:
+	print("nope")
+
+# =>
+(12 == 12) if print("yep") else print("nope")
 ```
 
 #### Přiřazení

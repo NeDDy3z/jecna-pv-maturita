@@ -48,15 +48,28 @@ Console.WriteLine(IncrementBy(5, 2)); // 7 testForEquality = (x, y) => x == y;
 #### Lambda výraz se dělí na dva typy
 1. Expression Lambda
 	- tvořena inputem a výrazem
-	- ```csharp
+	- C#:
+	  ```csharp
 	  // Příklad:
 	  var square = numbers.Select(x => x * x);
 	  
 	  // Syntaxe
 	  input => expression;
-2. Statement Lambda
+	  ```
+	- Python:
+	  ```python
+	  # Lambda metoda
+	  add = lambda x, y : x + y
+	  add(1,2) # -> 3
+	  
+	  # Výběr čísel > 2 z listu
+	  mujlist = [1,2,3,4,5,]
+	  filtered = list(filter(lambda x : x > 2, mujlist)) # -> [3,4,5]
+	  ```
+1. Statement Lambda
 	- tvořena inputem a více příkazy které budou vykonány
-	- ```csharp
+	- C#
+	  ```csharp
 	  //Příklad:
 	  Action<string> greet = name => {
 		  string greeting = $"Hello {name}!";
@@ -67,6 +80,17 @@ Console.WriteLine(IncrementBy(5, 2)); // 7 testForEquality = (x, y) => x == y;
 	  
 	  // Syntaxe:
 	  input => { statements };
+	  ```
+	- Python:
+	  ```python
+	  # Python
+	  greet = lambda name: print(f"Hello {name}!")
+	  greet("Ňoumo") # -> "Hello Ňoumo!"
+	  ```
+# Volání funkce
+```csharp
+greet("Šmoulo")  # Vytiskne "Hello Šmoulo!"
+```
 
 - další příklad: lambda metody pro sečtení dvou čísel
 ```csharp
@@ -79,6 +103,7 @@ int sum(int a, int b) => (a+b);
 - pro vytvoření se používá **delegate** 
 	- při deklaraci mu určujeme jaké metody do něj můžeme ukládat a jaké bude mít vstupní a výstupní hodnoty
 
+C#:
 ```csharp
  class Program {
     public delegate int Calculation(int a, int b);
@@ -99,6 +124,7 @@ int sum(int a, int b) => (a+b);
 - callback funkce
 - eventy
 - např. Callback
+C#:
 ```csharp
 class Program {
 	public delegate int Calculation(int a, int b);

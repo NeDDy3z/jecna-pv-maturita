@@ -39,6 +39,24 @@
 - **lineární rekurze** je když podprogram při vykonávání svého úkolu volá sama sebe jen jednou
 - **stromová rekurze** je když se funkce v rámci jednoho vykonávání úkolu zavolá vícekrát. Strukturu volání lze znázornit jako binární strom (viz obrázek)
 
+Python:
+```python
+# Přímá lineární rekurze (A() -> A() -> ...)
+def A():
+    A()  
+
+# Nepřímá lineární rekurze (B() -> C() -> B() -> ...)
+def B():  
+    C()  
+
+def C():  
+    B()
+
+# Přímá stromová rekurze (D() -> 2*D() -> 2*D() -> ...)
+def D():
+	return D(), D()
+```
+
 ![Typy_rekurze](../images/03_stromova_rekurze.png)
 ## Brute Force
 - deterministický algoritmus
@@ -52,6 +70,22 @@
 - velký prostor klíčů je tak nutnou podmínkou pro bezpečnost šifry
 - k prolomení symetrického klíče o délce 256 bitů je zapotřebí 2128 krát vyšší výkon, než k prolomení 128 bitového klíče 
 	- za předpokladu, že by jsme disponovali strojem se schopností ověřit trilion (1018) klíčů za sekundu stále by dešifrování trvalo 3x1051 let
+
+Python:
+```python
+key_to_discover = 800815
+
+def discover_key(key):
+	try_key = 0
+	while True:
+		if try_key == key:
+			print(f"Key discovered! -> {key}")
+			break
+		else:
+			try_key += 1
+
+# Tohle je extrémně simplifikovaný příklad, ale v jádru jde o to samé, prostě je to pokus-omyl algoritmus - zkouší všechny možné kombinace, dokud nenalezne tu co hledá.
+```
 
 ![Bruteforce](../images/03_bruteforce.png)
 ![Keys](../images/03_keys.png)

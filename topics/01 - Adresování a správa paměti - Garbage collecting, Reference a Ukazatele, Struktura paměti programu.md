@@ -34,11 +34,15 @@
 
 C#:
 ```csharp
-Example exampleObject = new Example(); // exampleObject is the reference
-
-string exampleString = "example"; // exampleString is the reference
+Example exampleObject = new Example(); // exampleObject je reference
+string exampleString = "example"; // exampleString je reference
 ```
 
+Python:
+```python
+exampleObject = ExampleClass(); // exampleObject je reference
+exampleString = "example"; // exampleString je reference
+```
 #### Pointer (Ukazatel)
 - odkaz na adresu (místo) proměnné
 - datový typ
@@ -85,7 +89,7 @@ string exampleString = "example"; // exampleString is the reference
 	- (není ve skutečnosti smazán, ale časem přepsán jiným blokem. Úplně stejné to funguje všude v PC)
 
 #### Příklady
-- proměné **a**,**b** jsou uloženy na heapuu, protože jsou proměnné třídy, **c** je ale proměnná metody, tudíž patří do stacku
+C#:
 ```csharp
 class example {
 	int a;
@@ -97,6 +101,7 @@ class example {
 	}
 }
 ```
+- proměné **a**,**b** jsou uloženy na heapu, protože jsou proměnné třídy, **c** je ale proměnná metody, tudíž patří do stacku
 
 ![Heap-Stack](../images/01_heap.png)
 
@@ -113,6 +118,16 @@ class example {
 		- objekty mimo strom jsou odpad odsouzeny k zániku
 - rozděluje paměť v haldě do 3 kategorií **Generation 0, Generation 1 a Generation 2**
 
+Python:
+```python
+import gc  
+  
+gc.collect() # Spustí GC ručně  
+  
+gc.disable() # Vypne GC
+  
+gc.enable() # Zapne GC
+```
 ![GC_tree](../images/01_gc1.png)
 
 #### Generation 0

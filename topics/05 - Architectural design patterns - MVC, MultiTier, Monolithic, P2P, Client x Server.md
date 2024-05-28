@@ -37,6 +37,52 @@
 	- reaguje na změny dat a události vyvolané uživatelem
 	- na jeho základě aktualizuje View
 
+Python:
+```python
+# MVC (Normálně je to v oddělených skriptech)
+# Rádoby databáze  
+class Model:  
+    def __init__(self): 
+        self.__data = "nějaká data"
+	
+	def change_data(self, new_data):
+		self.__data = new_data
+	
+    def get_data(self):  
+        return self.__data
+
+# Rádoby view  
+class View:
+	def user_input(self):
+		return input("Enter data: ")
+	
+    def render(self, data):  
+        print(data) 
+
+# Rádoby logika  
+class Controller:  
+    def __init__(self, model, view):  
+        self.model = model
+        self.view = view
+	
+	def change_data(self):
+		new_data = self.view.user_input()
+		self.model.change_data(new_data)
+
+    def show_data(self)
+	  data = self.model.get_data()
+	  self.view.render(data)
+
+  
+mod = Model()  
+view = View()  
+cont = Controller(mod, view)  
+  
+cont.change_data() # -> Od View dostane input, pak odešle data Modelu
+cont.show_data() # -> Dostane data z Modelu, zobrazí je ve View
+
+```
+
 ![MVC](../images/05_mvc.jpg)
 
 ## Multi-Tier / Multi-Layer
