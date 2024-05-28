@@ -14,8 +14,9 @@
         - Imperativní - strukturovany, oop, jak se to ma dělat 
         - Deklarativní - co se ma delat, funkční, logické, sql
     - Nižší (Assembler..)
-- *Objektové / Procedurální / Funkcionální jazyky*
-- *Staticky / Dynamicky typované jazyky (JAVA vs Python..)*
+- Objektové / Procedurální / Funkcionální jazyky
+- Staticky / Dynamicky typované jazyky (C# / Python)
+	- Proměnná je určená při kompilaci / Typ proměnné se mění za běhu programu
 - Popsat spouštění, běh a ukončení programu
 
 ## Základní pojmy
@@ -49,7 +50,7 @@
 - rychlejší a mají menší nároky na paměť než High-Level
 - např.: C v CITech na STM vývojové desce
 
-###### Asmebler
+**Asmebler**
 - kód psaný v asembleru je kompilován pomocí překladače assembler na strojový kód
 - assemblery jsou programovací jazyky, které umožňují programátorům psát instrukce, které jsou přímo srozumitelné CPU
 	- tyto instrukce jsou obvykle zapsány ve formě mnemonik, což jsou zkrácené názvy pro strojové instrukce, např. MOV pro přesunutí dat. 
@@ -96,7 +97,6 @@
 - **Funkcionální** programování chápe výpočet jako vyhodnocení matematických funkcí. Funkcionální programování má své kořeny v lambda-kalkulu, formálním systému vyvinutém v 30. letech k vyšetřování definicí funkcí, jejich aplikace a rekurze
 - **Logické** programování je v širším významu použití matematické logiky jako prostředku pro programování.
 - **Reaktivní** programování orientované kolem datových toků a šíření změn. To znamená, že by mělo být možné vyjádřit statické nebo dynamické datové toky v programovacích jazycích jednoduše a že základní provedení modelu bude automaticky kopírovat změny prostřednictvím datového toku.
-
 
 ## Syntaxe
 - každý jazyk má svojí originální syntaxy = způsob zápisu

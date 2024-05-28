@@ -334,15 +334,7 @@ Python:
 ```python
 import pickle
 
-# take user input to take the amount of data
-
-number_of_data = int(input('Enter the number of data : '))
-data = []
-
-# take input of the data
-for i in range(number_of_data):
-	raw = input('Enter data '+str(i)+' : ')
-	data.append(raw)
+data = "Ajajajajj"
 
 # open a file, where you ant to store the data
 file = open('important', 'wb')
@@ -369,11 +361,7 @@ data = pickle.load(file)
 # close the file
 file.close()
 
-print('Showing the pickled data:')
-cnt = 0
-for item in data:
-	print('The data ', cnt, ' is : ', item)
-	cnt += 1
+print(data) # -> "Ajajajajj"
 ```
 
 
