@@ -27,6 +27,7 @@
 #### Reference 
 - odkaz na proměnnou nebo instanci objektu na haldě
 	- nemůže odkazovat na null (jak kde)
+- samotná reference se ukládá ve stacku
 - abstraktní datový typ
 - abstraktnější variantou ukazatele, ukazatel nemá žádnou informaci o objektu v operační paměti
 - zvyšují flexibilitu
