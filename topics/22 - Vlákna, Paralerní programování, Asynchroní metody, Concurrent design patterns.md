@@ -73,11 +73,11 @@ public class Doggie
 ``` 
 - ke změně věku pejska má přístup vždy jen jedno vlákno současně, takže je třída thread safe
 - pokud přistupujeme k proměnné, která odkazuje na nějaký objekt, může být nutné zamknout i čtení proměnné kvůli změnám, které mohou ostatní vlákna vykonat, než se k hodnotě dostaneme
-### Asynchronní metody
+## Asynchronní metody
 - imagine vymýšlet maturitní otázky a nevědět že se "asynchronní" píše s dvěma n, smh
 - často se používají např. v JavaScriptu
 - umožňují konkurenci, exekuce programu nečeká na dokončení exekuce async metody
 - v JavaScriptu můžeme použít `await` keyword při volání metody, čímž zajistíme, že program počká na dokončení asnyc metody
 - hodí se např. při připojení k databázi, může to trvat delší dobu, program nemusí čekat a může mezitím např. načítat zbytek UI
-- v JavaScriptu mohou async metody také vracet Promise, což je ještě nedokončený výsledek asynchronní metody, můžeme na jeho výsledek počkat někde jinde
+- v JavaScriptu mohou async metody také vracet Promise, což je ještě nedokončený výsledek asynchronní metody, můžeme na jeho dokončení počkat někde jinde
 ### Concurrent design patterns
