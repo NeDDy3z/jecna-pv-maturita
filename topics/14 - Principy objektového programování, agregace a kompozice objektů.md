@@ -46,40 +46,45 @@
 	- můžeme přepsat metodu pomocí _override_
 
 příklad z GeeksForGeeks:
-```java
-// Java program to demonstrate
-// method overriding in java
+```csharp
+using System;
 
 // Base Class
-class Parent {
-    void show() { System.out.println("Parent's show()"); }
+class Parent
+{
+    public virtual void Show()
+    {
+        Console.WriteLine("Parent's show()");
+    }
 }
 
 // Inherited class
-class Child extends Parent {
-    // This method overrides show() of Parent
-    @Override void show()
+class Child : Parent
+{
+    // This method overrides Show() of Parent
+    public override void Show()
     {
-        System.out.println("Child's show()");
+        Console.WriteLine("Child's show()");
     }
 }
 
 // Driver class
-class Main {
-    public static void main(String[] args)
+class Program
+{
+    static void Main(string[] args)
     {
         // If a Parent type reference refers
         // to a Parent object, then Parent's
-        // show is called
+        // Show is called
         Parent obj1 = new Parent();
-        obj1.show();
+        obj1.Show();
 
         // If a Parent type reference refers
-        // to a Child object Child's show()
+        // to a Child object, Child's Show()
         // is called. This is called RUN TIME
         // POLYMORPHISM.
         Parent obj2 = new Child();
-        obj2.show();
+        obj2.Show();
     }
 }
 ```
@@ -87,31 +92,33 @@ class Main {
   - můžeme zanechat název metody, ale změnit vstupní paramtery, _overloading_
   - příklad z GeeksForGeeks:
 
-```java
-// Java program to demonstrate working of method
-// overloading in Java
+```csharp
+using System;
 
-public class Sum {
-    // Overloaded sum(). This sum takes two int parameters
-    public int sum(int x, int y) { return (x + y); }
-    // Overloaded sum(). This sum takes three int parameters
-    public int sum(int x, int y, int z)
+public class Sum
+{
+    // Overloaded Sum(). This Sum takes two int parameters
+    public int Sum(int x, int y) { return (x + y); }
+
+    // Overloaded Sum(). This Sum takes three int parameters
+    public int Sum(int x, int y, int z)
     {
         return (x + y + z);
     }
-    // Overloaded sum(). This sum takes two double
-    // parameters
-    public double sum(double x, double y)
+
+    // Overloaded Sum(). This Sum takes two double parameters
+    public double Sum(double x, double y)
     {
         return (x + y);
     }
+
     // Driver code
-    public static void main(String args[])
+    public static void Main(string[] args)
     {
         Sum s = new Sum();
-        System.out.println(s.sum(10, 20));
-        System.out.println(s.sum(10, 20, 30));
-        System.out.println(s.sum(10.5, 20.5));
+        Console.WriteLine(s.Sum(10, 20));
+        Console.WriteLine(s.Sum(10, 20, 30));
+        Console.WriteLine(s.Sum(10.5, 20.5));
     }
 }
 ```
