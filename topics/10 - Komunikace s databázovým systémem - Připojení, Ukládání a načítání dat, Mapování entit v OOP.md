@@ -109,8 +109,6 @@ val = ("Ram", "85")
 mycursor.execute(sql, val)
 mydb.commit()
 
-print(mycursor.rowcount, "details inserted")
-
 mydb.close()
 ```
 
@@ -134,8 +132,8 @@ mycursor.execute(query)
 
 myresult = mycursor.fetchall()
 
-for x in myresult:
-	print(x)
+for result in myresult:
+	print(result)
 
 mydb.close()
 ```

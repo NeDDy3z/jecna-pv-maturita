@@ -41,8 +41,9 @@
 
 #### Navázání spojení
 Probíhá ve třech krocích **(3-way handshake)**:
-- klient odešle na server datagram s nastaveným příznakem SYN a náhodně vygenerovaným pořadovým číslem (x), potvrzovací číslo = 0
-- server odešle klientovi datagram s nastavenými příznaky SYN a ACK, potvrzovací číslo = x+1, pořadové číslo je náhodně vygenerované (y)
+- klient odešle na server datagram s nastaveným příznakem SYNC
+- a náhodně vygenerovaným pořadovým číslem (x), potvrzovací číslo = 0
+- server odešle klientovi datagram s nastavenými příznaky SYNC a ACKNOWLEDGMENT, potvrzovací číslo = x+1, pořadové číslo je náhodně vygenerované (y)
 - klient odešle datagram s nastaveným příznakem ACK, pořadové číslo=x+1, číslo odpovědi = y+1.
 
 ![3 Way handshake](../images/11_3-way_handshake.png)

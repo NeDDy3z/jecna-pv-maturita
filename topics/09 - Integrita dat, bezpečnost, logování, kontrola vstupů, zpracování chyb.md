@@ -46,6 +46,13 @@ def say(phrase):
 - validace může zahrnovat kontrolu datového typu, formátování a kontroly na případné nebezpečné prvky, jako jsou **SQL injection nebo cross-site scripting**
 - nejčastěji se používá **regex** na kontrolu 
 	- např. zadané e-mailové adresy, jestli zadané heslo splňuje podmínky, atd.
+	- ```python
+	  import re
+	  pattern = r'apple'
+	  text = "I have an apple and a banana."
+	  matches = re.findall(pattern, text)
+	  
+	  print(matches) # -> "apple"
 
 **Zálohování dat** 
 - důležité pro zajištění integrity dat v případě, že dojde k havárii nebo ztrátě dat
