@@ -1,14 +1,13 @@
 # Strojové učení s využitím regrese a klasifikace
 
 ## O čem mluvit?
-- popsat regresi
-	- jak funguje
-	- co je jejím grafem
-	- vstupy, výstupy
-- popsat klasifikaci
-	- jak funguje
-	- jak rozděluje data
-	- vstupy, výstupy
+- Regrese
+	- dám stroji data a chci po něm na výstupu číslo
+ 	- snažím se vytvořit matematickou funkci která každé ke hodnotě něco vrátí, cena domu
+	- ukázat její gráfek
+- Klasifikace
+	- po dání stroji dat po něm chci přesná data
+ 	- např.: co je na obrázku za zvíře, jakou má střecha barvu
 
 ## Regrese
 Typ řízeného učení, kde je cílem předpovídat závislou proměnnou na základě jedné nebo více vstupních funkcí (také nazývaných prediktory nebo nezávislé proměnné).

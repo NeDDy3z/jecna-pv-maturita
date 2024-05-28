@@ -39,6 +39,55 @@
 	<img src="https://media.cheatography.com/storage/thumb/davechild_regular-expressions.750.jpg?last=1584011681">
 </details>
 
+### Příklady použití Regexu v C#:
+#### Získání informace, zda regex najde match
+```
+string pattern = @"\d+"; // Pattern to match one or more digits
+string input = "There are 123 apples";
+
+bool isMatch = Regex.IsMatch(input, pattern);
+Console.WriteLine(isMatch); // Output: True
+```
+#### Získání matches
+```
+string pattern = @"\d+";
+string input = "There are 123 apples and 456 oranges";
+
+MatchCollection matches = Regex.Matches(input, pattern);
+foreach (Match match in matches)
+{
+    Console.WriteLine(match.Value);
+}
+// Output:
+// 123
+// 456
+
+```
+#### Záměna textu
+```
+string pattern = @"\d+";
+string input = "Price: 100 USD";
+
+string result = Regex.Replace(input, pattern, "200");
+Console.WriteLine(result); // Output: Price: 200 USD
+```
+#### Rozdělování stringů
+```
+string pattern = @"\s+"; // Pattern to match one or more whitespace characters
+string input = "Split these words";
+
+string[] result = Regex.Split(input, pattern);
+foreach (string word in result)
+{
+    Console.WriteLine(word);
+}
+// Output:
+// Split
+// these
+// words
+
+```
+
 ## Kódování
 - způsob, jaký upravit data na formu, kterou bude počítač schopný zpracovat
 - většinou se ke kódování používají přesně stanovené tabulky a znakové sady
