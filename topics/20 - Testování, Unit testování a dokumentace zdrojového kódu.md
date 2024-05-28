@@ -32,10 +32,6 @@
 
 ### Dělení testování
 #### Typy testů
-- **Integrační testy** 
-	- test celkového kódu
-	- testují interakce mezi různými komponentami nebo moduly
-	- ověřují, zda spolupracují správně
 - **Unit testy**
 	- testují nejmenší testovatelnou jednotku kódu
 	- ověřují, zda se chová správně, nezávisle na ostatních částech systému
@@ -45,6 +41,9 @@
 - **Modul Testy**
 	- testují celé funkční moduly kódu
 	- ověřují, zda spolupracují správně s jinými moduly
+- **Integrační testy** 
+	- testují interakce mezi různými komponentami nebo moduly
+	- ověřují, zda spolupracují správně
 - **Testy komponent**
 	- testují celé funkční komponenty systému
 	- ověřují, zda pracují správně při interakci s ostatními komponentami

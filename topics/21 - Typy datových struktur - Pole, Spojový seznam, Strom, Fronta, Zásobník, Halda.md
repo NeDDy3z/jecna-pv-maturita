@@ -7,11 +7,11 @@
 - popsat stromy, jak fungují, co to je binární strom
 - popsat haldu, jaké podmínky musí splňovat
 - popsat frontu a stack, hlavní metody obou, čím se liší
-## Pole/Array
+## Pole / Array
 - jednoduchá datová struktura, představuje počet prvků seřazených v paměti
 - má neměnnou velikost, nedá se rozšiřovat ani zmenšovat, po celou dobu existence zabírá stejné množství místa
 - k prvkům přistupujeme pomocí indexu, většinou jsou prvky indexované od 0, až na některé jazyky
-## ArrayList/List/Pole s variabilní velikostí
+## ArrayList / List / Pole s variabilní velikostí
 - abstrakce nad polem, kde se velikost může měnit
 - funguje tak, že v případě potřeby vytvoří nové pole s novou velikostí a nakopíruje do něj data ze starého
 - často se list jen zvětšuje a nikdy se nezmenšuje
@@ -28,6 +28,7 @@
 - pro implementaci potřebujeme vytvořit dvě třídy
 	- **LinkedList** = třída, která obsahuje metody s operacemi s kolekcí, odkazuje na head
 	- **Node** = třída pro samotné prvky, obsahuje hodnotu a odkaz na další (a případně předchozí) prvek
+
 ## Strom/Tree
 - datová struktura podobná linked listu, akorát každý prvek může odkazovat na několik prvků
 - můžeme si ho představit jako hodnocený graf s několika pravidly

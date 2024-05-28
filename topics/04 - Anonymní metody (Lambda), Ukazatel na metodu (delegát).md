@@ -36,26 +36,30 @@ Console.WriteLine(IncrementBy(5, 2)); // 7 testForEquality = (x, y) => x == y;
 	- nemusí při tom volat metodu, oni sami jsou jim podobné
 - nemají jméno
 - můžou být použity jako proměnná
-- Lambdy mají určitá pravidla -> Nemohou uvnitř obsahovat proměnné, podmínky či cykly. Mohou být psány více způsoby.
+- Lambdy mají určitá pravidla -> Nemohou uvnitř obsahovat proměnné čí cykly. Mohou být psány více způsoby.
 - Lambda je v c# řešena pomocí knihovny Linq
 
 #### Proč lambdu použít?
+- můžu funkce posílat jiné funkci jako proměnnou
 - pomáhají filtrovat a získávat data z kolekcí bez zbytečně dlouhého kódu 
 - jsou převážně krátké a jednoduché na pochopení
-- pozor, nejsou vždy rychlejší! Mohou být i pomalejší
-- můžeme díky nim splnit určitý interface.
+- můžeme díky nim splnit určitý interface
 
 #### Lambda výraz se dělí na dva typy
 1. Expression Lambda
 	- tvořena inputem a výrazem
 	- C#:
 	  ```csharp
-	  // Příklad:
-	  var square = numbers.Select(x => x * x);
-	  
-	  // Syntaxe
-	  input => expression;
-	  ```
+		List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
+
+        // Použití lambda výrazu s metodou Where
+        var evenNumbers = numbers.Where(n => n % 2 == 0).ToList();
+
+        foreach (var number in evenNumbers)
+        {
+            Console.WriteLine(number);  // Output: 2 4
+        }
+		```
 	- Python:
 	  ```python
 	  # Lambda metoda
@@ -87,7 +91,7 @@ Console.WriteLine(IncrementBy(5, 2)); // 7 testForEquality = (x, y) => x == y;
 	  greet = lambda name: print(f"Hello {name}!")
 	  greet("Ňoumo") # -> "Hello Ňoumo!"
 	  ```
-# Volání funkce
+#### Volání funkce
 ```csharp
 greet("Šmoulo")  # Vytiskne "Hello Šmoulo!"
 ```
@@ -98,6 +102,7 @@ int sum(int a, int b) => (a+b);
 ```
 
 ## Delegát
+- deklaruju si vlastní typ anonymních funkcí
 - proměnná která odkazuje na nějakou metodu
 	- technicky je to referenční datový typ
 - pro vytvoření se používá **delegate** 

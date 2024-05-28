@@ -383,7 +383,6 @@ def add(x: int, y: int) -> int: # ": int) -> int" je anotace
 
 Je mnoho dalších anotací.
 
-
 ## Operátory
 - symbol (nebo řada symbolů) využívaný k reprezentaci matematických či logických operací mezi proměnnými nebo hodnotami.
 - každý programovací jazyk má svoji škálu použitelných operátorů, základní operátory jako např. +, -, \*, /, bývají všude stejné.

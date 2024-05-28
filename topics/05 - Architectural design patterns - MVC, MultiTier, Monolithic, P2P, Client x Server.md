@@ -21,7 +21,7 @@
 
 ## MVC
 - Model-View-Controller
-- základní myšlenkou je oddělení logiky od výstupu
+- základní myšlenkou je oddělení logiky do 3 hlávních částí
 - účelem je zajistit dlouhodobou udržitelnost kódu
 - oblíbený design pattern pro desktopové využití i webdev
 - je součástí populárních webových frameworků, z C# ASP.NET
@@ -29,11 +29,10 @@
 #### Skládá se ze 3 částí
 - **Model** - datový model
 	- obsahuje logiku a zajišťuje práci s daty
-	- komunikuje s databází, CRUD, provádí kalkulace a validaci dat
 - **View** - uživatelské rozhraní (např.: webová stránka)
 	- obstarává pohled uživatele na data
 - **Controller** - řídí logiku (např.: server)
-	- prostředník mezi ostatnímy komponenty
+	- prostředník mezi ostatními komponenty
 	- reaguje na změny dat a události vyvolané uživatelem
 	- na jeho základě aktualizuje View
 

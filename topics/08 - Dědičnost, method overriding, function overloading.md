@@ -17,9 +17,9 @@
 - dědičnost umožňuje vytvářet nové třídy, které znovu používají, rozšiřují a upravují chování definované v jiných třídách
 
 Dělíme na:
-	- **Parent class** (rodičovská třída) - Třída, od které ostatní třídy dědí
-	- **Child class** (potomek) - Třída, která dědí od rodičovské třídy
-		- může dědit pouze od jedné **Parent class**(toto platí v jazyce Java i C#, některé jazyky ale vícenásobnou dědičnost povolují, např. C++).
+- **Parent class** (rodičovská třída) - Třída, od které ostatní třídy dědí
+- **Child class** (potomek) - Třída, která dědí od rodičovské třídy
+	- může dědit pouze od jedné **Parent class**(toto platí v jazyce Java i C#, některé jazyky ale vícenásobnou dědičnost povolují, např. C++).
 
 Třídy (a metody) můžeme nastavit jako již dále **neděditelnou**
 - **Java** - klíčové slovo **final** 

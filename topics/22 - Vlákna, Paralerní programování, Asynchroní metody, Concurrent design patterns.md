@@ -18,7 +18,7 @@
 	- nemá smysl využívat více vláken, než je jader procesoru k dispozici, výkon se tím akorát zhorší
 ### Jednoduchá implementace paralelnosti v C#:
 #### Kód:
-```
+```csharp
 var thread1 = new Thread(() =>
 {
 	for (var i = 0; i < 10; i++) Console.WriteLine("1");
@@ -40,6 +40,35 @@ thread2.Join();
 Console.WriteLine("Vše je dokončeno.");
 ```
 - metoda Join() zajistí, že Main() počká, než thread skončí svou exekuci 
+
+```python
+import threading
+import time
+
+def print_numbers():
+    for i in range(1, 6):
+        print(f"Number: {i}")
+        time.sleep(1)
+
+def print_letters():
+    for letter in 'abcde':
+        print(f"Letter: {letter}")
+        time.sleep(1)
+
+# Create threads
+thread1 = threading.Thread(target=print_numbers)
+thread2 = threading.Thread(target=print_letters)
+
+# Start threads
+thread1.start()
+thread2.start()
+
+# Wait for both threads to complete
+thread1.join()
+thread2.join()
+
+print("Done!")
+```
 #### Output:
 ```
 Thready byly spuštěny, ale Main() metoda běží dál.
@@ -59,7 +88,7 @@ Vše je dokončeno.
 - všechna vlákna přistupují k datům na haldě současně, což může způsobit, že se dvě vlákna pokusí změnit proměnnou současně, což může výrazně narušit logiku programu
 - proměnné a metody můžeme zamknout, čímž zajistíme, že thready počkají na dokončení operace jiného threadu, než budou pokračovat ve vlastní exekuci
 ### Jednoduchý příklad zamykání metod v C#:
-```
+```csharp
 public class Doggie
 {
     private readonly object _locker = new object();
@@ -70,7 +99,7 @@ public class Doggie
         get => _age;
         set
         {
-            lock (_locker)
+            lock (_locker) //tady 
             {
                 _age = value;
             } 
