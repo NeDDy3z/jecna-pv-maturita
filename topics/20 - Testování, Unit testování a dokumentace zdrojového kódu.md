@@ -1,13 +1,11 @@
 # [Testování, Unit testování a dokumentace zdrojového kódu](https://youtu.be/8X5PS8CZyIs?si=cg49xrzwNqY5VgCP)
 ## O čem mluvit
 - Testování
-	- Vysvětlení procesu testování a jeho důležitosti při vývoji softwaru.
-	- Identifikace různých typů testování a jejich účelu (unit testování, regression testing, integration testing).
-	- Vytváření a používání test caseů jako základního nástroje pro testování kódu.f
+	- důležitá součást vývoje
+	- testujeme chtěné výsledky s těmi reálnými
+	- testcasy, unittesty
 - **Unit testování:**
-	- Detailní vysvětlení konceptu unit testování a jeho výhod.
-	- Ukázka psaní a používání unit testů pro testování jednotlivých funkcí nebo modulů.
-	- Diskuse o nejlepších praktikách pro psaní efektivních unit testů.
+	- testují nejmenší testovatelnou jednotku kódu jestli funguje sám o sobě
 - **Dokumentace zdrojového kódu:**
 	- Důležitost a výhody dokumentace zdrojového kódu pro udržitelnost a spolupráci v týmu.
 	- Představení různých stylů dokumentace zdrojového kódu (např. docstrings, komentáře, README soubory).
@@ -186,9 +184,8 @@ Příklad:
 - **Nástroje pro generování dokumentace:**
   - Existuje mnoho nástrojů, které umožňují automatické generování dokumentace z docstrings (např. Sphinx pro Python).
   - Tyto nástroje umožňují vytvářet rozsáhlou a dobře strukturovanou dokumentaci zdrojového kódu s minimálním úsilím.
-- <details><summary><a>Příklad</a></summary><hr/>
-  
-    ```Python
+Příklad:
+```Python
     def factorial(n):
         """Compute the factorial of a non-negative integer.
     
@@ -208,6 +205,4 @@ Příklad:
             return 1
         else:
             return n * factorial(n - 1)
-    ```
-    <hr/>
-  </details>
+```

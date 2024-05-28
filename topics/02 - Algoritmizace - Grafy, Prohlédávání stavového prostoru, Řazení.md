@@ -20,6 +20,7 @@
 
 ## Grafy
 - graf je datová struktura popisující vztahy mezi objekty
+- slouží k zobrazení různých problémů v programování
 - grafy z oblasti teorie grafů mají široké využití v mnoha oblastech, např. úlohy o dopravním spojení, logistické problémy, optimální spojení, propustnost sítě, přenos energie, komprese dat
 - každý graf obsahuje:
 	- Body = vrcholy grafu (uzly)
@@ -74,8 +75,10 @@
 
 ## Prohledávání stavového prostoru
 - základní technika v umělé inteligenci 
-- stavový prostor je graf stavů
+- stavový prostor je graf všech možných stavů
 - používá se k nalezení cesty nebo řešení problému v grafových strukturách nebo stavových prostorech za účelem nalezení požadovaného stavu
+- např.: 
+	- všechny možné stavy při hře piškvorek (všechny možné kombinace zaplnění hracího pole)
 
 ![Searching_diagram](../images/02_stavovyprostor.png)
 
@@ -134,7 +137,7 @@ bfs(graph, 'A')
 - nejvýkonnější algoritmy bývají zpravidla ty, které neporovnávají jednotlivé hodnoty prvků
 - existují algoritmy stabilní a nestabilní
 	- u stabilního nehrozí, že by v jeho průběhu byly prohozeny stejné hodnoty
-		- to je užitečné především tehdy, když je řazeno více algoritmů
+
 
 #### Bubble sort
 - stabilní
@@ -160,7 +163,14 @@ bubbleSort(list)
 ```
 
 ![BubbleSort](../images/02_bubblesort.png)
+#### Insertion sort
+- nestabilní
+- časová složitost: O(n^2) *n je počet prvků*
+	- O(n) v nejlepším případě (když je pole téměř seřazeno)
+- paměťová složitost: O(1) - jako bubble
+- prvky se řadí na základě již projetých prvků
 
+![InsertionSort](../images/02_insertionsort.png)
 #### Merge sort
 - stabilní
 - "rozděl a panuj"
@@ -173,16 +183,6 @@ bubbleSort(list)
 	- sousední prvky se porovnávají a slévají do jednoho pole dokud nezbyde jen jedno pole
 
 ![MergeSort](../images/02_mergesort.png)
-
-#### Insertion sort
-- nestabilní
-- časová složitost: O(n^2) *n je počet prvků*
-	- O(n) v nejlepším případě (když je pole téměř seřazeno)
-- paměťová složitost: O(1) - jako bubble
-- prvky se řadí na základě již projetých prvků
-
-![InsertionSort](../images/02_insertionsort.png)
-
 #### Quick sort
 - nestabilní
 - časová složitost: O(n^2) *n je počet prvků*

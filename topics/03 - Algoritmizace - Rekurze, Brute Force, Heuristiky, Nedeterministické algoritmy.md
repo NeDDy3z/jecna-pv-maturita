@@ -29,12 +29,10 @@
 
 ## Typy rekurze
 - rekurzi dělíme na dva základní typy na základě toho, kolik podprogramů se jí účastní
-
 #### Rekurze může probíhat přímo nebo nepřímo:
-- **přímá rekurze** volá sama sebe
+- **přímá rekurze** volá sama sebe, např.: faktoriál
 - **nepřímá rekurze** je když vzájemné volání podprogramů tvoří kruh
 	- příkladem je situace, kdy funkce A volá funkci B, která opět volá A
-
 #### Podprogram může být volán jednou, nebo vícekrát
 - **lineární rekurze** je když podprogram při vykonávání svého úkolu volá sama sebe jen jednou
 - **stromová rekurze** je když se funkce v rámci jednoho vykonávání úkolu zavolá vícekrát. Strukturu volání lze znázornit jako binární strom (viz obrázek)
@@ -55,6 +53,15 @@ def C():
 # Přímá stromová rekurze (D() -> 2*D() -> 2*D() -> ...)
 def D():
 	return D(), D()
+```
+
+Python:
+```python
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
 ```
 
 ![Typy_rekurze](../images/03_stromova_rekurze.png)
@@ -93,11 +100,11 @@ def discover_key(key):
 ## Heuristiky
 - heuristika je v podstatě zkusmé řešení problému
 - obvykle označení pro algoritmy které:
-	- neposkytují záruku kvality řešení 
+	- neposkytují záruku kvality řešení - získáme ho ale rychle
 	- pokud nevíme, jestli heuristika uspěje
 - dokáží zrychlit Bruteforce, upřednostňují nějaké řešení a nějaké i vynechají
 - vhodné tehdy, pokud neznáme přesný postup, jak dojít k cíli
-	- toto řešení nemusí být ale jsou dostatečně přesné a rychlé
+	- toto řešení nemusí být ale dostatečně přesné
 		- např.: rozhodnutí bota v šachách
 
 #### Nejčastější metody Heuristiky:
@@ -115,7 +122,6 @@ def discover_key(key):
 ## Determenistické / Nedeterministické algoritmy
 #### Determenistické
 - za stejných podmínek vrátí vždy ten stejný výsledek
-
 #### Nedeterministické
 - za stejných podmínek **ne**vratí vždy ten stejný výsledek
 - např.: MonteCarlo, Hod kostkou
