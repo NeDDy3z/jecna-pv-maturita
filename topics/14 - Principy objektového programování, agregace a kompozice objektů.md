@@ -190,20 +190,19 @@ V **C#** pro to používáme:
 - **static** - prvek nemůže mít instanci, existuje pouze jeden
 
 ## Agregace a kompozice
-- agregace a kompozice jsou vztahy mezi třídami
-	- agregace = sdílená (shared) agregace 
-	- kompozice = složená (composite) agregace
-- agregace představuje volnou vazbu mezi celkem a součástí, kdy jeden objekt (celek) využívá služby dalších objektů (součástí)
-- silnější formou agregace je kompozice
-- např.: 
-	- vztah mezi počítačem a tiskárnou je vztah typu agregace
-		- kdy počítač s tiskárnou tvoří jeden celek, ale tiskárna může existovat i tehdy, pokud není k žádnému počítači připojena. 
-- agregace je formou asociace a v grafické podobě se odlišuje prázdným kosočtvercem na straně celku
+Agregace a kompozice jsou vztahy mezi třídami
+- agregace = sdílená (shared) agregace 
+	-  volná vazba mezi celkem a součástí - jeden objekt (celek) využívá služby dalších objektů (součástí)
+- kompozice = složená (composite) agregace
+	- silnější formou agregace
+	- neumožňuje samostatnou existenci součásti
 
-![alt-text](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/14_agregace.png)
+#### Příklady
+Agregace:
+- vztah mezi počítačem a tiskárnou je vztah typu agregace
+	- kdy počítač s tiskárnou tvoří jeden celek, ale tiskárna může existovat i tehdy, pokud není k žádnému počítači připojena
 
-- z obrázku(nahoře) je zřejmé, že ke každému počítači může být připojen libovolný počet tiskáren a že tiskárna může být připojena k nejvýše jednomu počítači. 
-- podstatné je, že odpojíme-li tiskárnu od počítače a počítač dáme do šrotu, je tiskárna stále použitelná s jiným počítačem. Silnější formou agregace je kompozice
-	- jde opět o vztah mezi celkem a součástí, ale tento vztah je velmi těsný a neumožňuje samostatnou existenci součásti, aniž by byla připojena k nějakému celku. Navíc na rozdíl od agregace tato součást musí patřit jen jedinému celku a není možné ji sdílet s více celky
+![vztah pc a tiskárny 0..1 - 0..*](../images/14_agregace.png)
 
-![alt-text](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/14_kompozice.png)
+Kompozice:
+![vztah faktura položka 1 - 1..*](../images/14_kompozice.png)

@@ -23,7 +23,7 @@ Existuje mnoho metodik, každá organizace může používat svojí vlastní met
 ### Vodopádový model
 Vodopádový model je tzv. **sekvenční lineární proces**, kde se na vývoj hledí jako na „vodopád“ *n*-fází. Rozbíjí projekt na jednotlivé fáze, kde každá další může začít až ve chvíli, kdy předchozí skončila. Navíc se nemůžeme vracet k dokončeným fázím, nebo přeskakovat mezi fázemi. V opozici vůči vodopádovému modelu stojí novodobá agilní metodika (např. Scrum, ...). Jedná se o velmi zastaralou metodiku, kterou se v praxi v dnešní době nevyplatí využívat, vyplatí se pouze v určitých případech jako např. menší projekt, kdy máme naprosto jasno jak bude probíhat vývoj. Vyžaduje aby vše probíhalo dokonale. Nevyplatí se na větší projekty. Přesto je často využíván vládam, nebo i organizací NASA.
 
-![waterfall](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/12_waterfall.png)
+![waterfall](../images/12_waterfall.png)
 
 **Pozor! Design v tomto případě znamená Návrh -> UML, atd..! Ne grafický design!**
 
@@ -51,7 +51,7 @@ Základní principy jsou:
 - Zákazník nebo klient je zapojen do celého procesu vývoje, což zvyšuje šanci, že přijme konečnou implementaci.
 - Zatímco u některých prototypů se očekává, že přispějí k ujasnění směru vývoje, a pak budou zahozeny, v některých případech je možné z prototypu vyvíjet cílový systém.
 
-![prototype](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/12_prototype.jpg)
+![prototype](../images/12_prototype.jpg)
 
 #### Druhy prototypů:
 **Horizontální prototyp** 
@@ -100,7 +100,7 @@ Principy inkrementálního modelu:
 2. Obecné požadavky definujeme dříve, než přikročíme k evolučnímu vývoji pomocí malých vodopádů
 3. Koncept, analýza, design architektury a systémové jádro se definují pomocí vodopádu, poté přecházíme na prototypován
 
-![agile](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/12_agile.jpg)
+![agile](../images/12_agile.jpg)
 
 **Plusy:**
 - Flexibilita: Agilní model umožňuje pružnou reakci na změny požadavků zákazníka během procesu vývoje. To znamená, že i když se požadavky mění, tým může rychle adaptovat.
@@ -124,7 +124,7 @@ Základní čtyři kvadranty modelu (iterace = jedno projití spirálou):
 3. Vývoj - vývoj a kontrola produktu, součástí vývoje je i testování
 4. Plánování - plán pro příští iterace
 
-![spiral](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/12_spiral.jpg)
+![spiral](../images/12_spiral.jpg)
 
 
 ## Extrémní programování

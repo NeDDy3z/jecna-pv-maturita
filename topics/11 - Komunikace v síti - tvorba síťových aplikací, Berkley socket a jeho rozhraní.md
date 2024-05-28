@@ -61,7 +61,7 @@ Probíhá podobně jako jeho navázání. Používá se k tomu příznaků FIN a
 - druhá strana, která ukončuje posílání dat, odešle datagram s nastaveným příznakem FIN
 - protistrana odpoví datagramem s nastaveným příznakem ACK
 
-![alt-text](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/11_3-way_handshake(term).jpg)
+![tcp ukončení spojení](../images/11_3-way_handshake(term).jpg)
 
 Po prvních dvou krocích může druhá strana pokračovat v posílání dat. Pokud žádná data posílat nebude, mohou být kroky 2 a 3 sloučeny. Teprve po těchto čtyřech krocích je spojení ukončeno.
 

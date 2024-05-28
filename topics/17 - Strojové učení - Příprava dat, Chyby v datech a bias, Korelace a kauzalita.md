@@ -6,12 +6,12 @@
   - typy: úzká (řeší konkretni problém), silná (neexistuje, dokaze vše)
   - využití, problémy, ...
 - Strojové učení
-   - supervised - pro vstupni data je spravny výstup 
-   - unsupervised - ke vstupu neni výstup
+   - supervised - dáváme stroji labeled data, pro vstupní data je spravný výstup 
+   - unsupervised - data bez označení, ke vstupu není správný výstup
    - semi-supervised - mix obojiho nahoře
    - reinforcement - dostava odměny/trest, ai ve hrách, autopilot dronu?
 - druhy výstupů
-   - klasifikace - deleni dle vstupnich rysů
+   - klasifikace - dělení dle vstupních rysů
    - regrese - číselná hodnota dle vstupu
    - shlukování - do skupin dle podobnosti
 - jak se připravují data (dělali jsme to na hodinách)
@@ -44,13 +44,13 @@ Dělíme na dva typy:
 - umí cokoliv, co dokáže člověk, nebo dokonce více
 - zatím neexistuje
 
-![AI](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/17_ui.png)
+![AI typy](../images/17_ui.png)
 
 ## Strojové učení
 
 Strojové učení je jedním z nástrojů umělé inteligence. V současnosti nejrozšířenější metoda umělé inteligence s největšími dopady. Strojové učení je podmnožinou umělé inteligence. Zabývá se zjišťováním funkce _f_, která pro nový vstup určí odpovídající výstup.
 
-![f](https://github.com/NeDDy3z/jecna-pv-maturita/blob/main/images/17_strojove_uceni.png)
+![vstup - f -> výstup](../images/17_strojove_uceni.png)
 
 Zkráceně - nalezne vzor z dat, namísto toho aby mu byl přímo tento vzor poskytnut.
 Tento vzor - funkce - se pak dále zlepšuje pro co největší přesnost výstupu.
@@ -69,7 +69,7 @@ Pomocí strojového učení se řeší problémy jako předpověď počasí, cen
   - ke vstupním datům není známý výstup
   - cílem je aby našel skryté nebo nejasné vztahy/vzorce mezi neoznačenými daty
   - data **ne**jsou v datasetu určena
-    - např. v tabulce není nic označené, je to prostě hromada dat
+    - např. v tabulce není nic označené, je to prostě hromada dat = nachází vztahy mezi daty
 - **semi-supervised learning**
   - část vstupních dat je se známým výstupem, ale další data, typicky větší, jsou bez něj
 - **reinforcement learning**
