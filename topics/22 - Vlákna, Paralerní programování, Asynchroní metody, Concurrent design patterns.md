@@ -1,7 +1,14 @@
 # [Vlákna, Paralerní programování, Asynchroní metody, Concurrent design patterns](https://youtu.be/25J3XXahF3w?si=vcp1f1FF7fwRsbe_)
 ## O čem mluvit?
+- vysvětlit, co to je
+- jak fungují vlákna
+- k čemu se konkurence používá
+- napsat jednoduchý kód který se spouští paralelně
+- vysvětlit problém s konkurencí a jak se mu dá předejít
+- vysvětlit asynchronní metody, v jakých jazycích se často používají
+- popsat konkurentní design patterns, jak fungují, k čemu jsou
 ## Vlákna, paralelní programování
-- imagine vymýšlet maturitní otázky a myslet si že existuje slovo arale**r**ní, smh
+- imagine vymýšlet maturitní otázky a myslet si že existuje slovo parale**r**ní, smh
 - průběh programu, kde běží několik činností zároveň
 - při vytvoření nového vlákna se vytvoří nový zásobník na stacku
 - je možné mít více vláken než jader procesoru, jádra procesoru vlákna střídají
@@ -80,4 +87,14 @@ public class Doggie
 - v JavaScriptu můžeme použít `await` keyword při volání metody, čímž zajistíme, že program počká na dokončení asnyc metody
 - hodí se např. při připojení k databázi, může to trvat delší dobu, program nemusí čekat a může mezitím např. načítat zbytek UI
 - v JavaScriptu mohou async metody také vracet Promise, což je ještě nedokončený výsledek asynchronní metody, můžeme na jeho dokončení počkat někde jinde
-### Concurrent design patterns
+## Concurrent design patterns
+### Producer-Consumer
+- některé thready vytvářejí data na zpracování, jiné je zpracovávají
+    - produceři data dávají do sdílené kolekce
+    - comsumeři je berou a zpracovávají
+### Future/Promise
+- asynchronní funkce vrátí promise, což je objekt reprezentující budoucí výsledek, který ovšem ještě není hotový
+### Thread pool
+- na začátku programu vytvoříme thready, které jsou idle, dokud pro ně nemáme práci
+- práce je pak rozdělena mezi thready, které už jsou vytvořeny
+- nemusíme tvořit thready pokaždé, čímž se zvyšuje výkon
