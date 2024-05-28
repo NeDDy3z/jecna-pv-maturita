@@ -27,8 +27,8 @@ Zpracovaná témata na maturitu z předmětu **PV (programování)** na SPŠE Je
 19. [Strojové učení s využitím umělých neuronových sítí](topics/19%20-%20Strojové%20učení%20s%20využitím%20umělých%20neuronových%20sítí.md)
 20. [Testování, Unit testování a dokumentace zdrojového kódu](topics/20%20-%20Testování,%20Unit%20testování%20a%20dokumentace%20zdrojového%20kódu.md)
 21. [Typy datových struktur - Pole, Spojový seznam, Strom, Fronta, Zásobník, Halda](topics/21%20-%20Typy%20datových%20struktur%20-%20Pole,%20Spojový%20seznam,%20Strom,%20Fronta,%20Zásobník,%20Halda.md)
-22. ⚠️ [Vlákna, Paralerní programování, Asynchroní metody, Concurrent design patterns](topics/22%20-%20Vlákna,%20Paralerní%20programování,%20Asynchroní%20metody,%20Concurrent%20design%20patterns.md)
-23. ⚠️ [Vlastnosti datových struktur - Seřazenost a opakování prvků, Indexace, hashování a klíče prvků](topics/23%20-%20Vlastnosti%20datových%20struktur%20-%20Seřazenost%20a%20opakování%20prvků,%20Indexace,%20hashování%20a%20klíče%20prvků.md)
+22. [Vlákna, Paralerní programování, Asynchroní metody, Concurrent design patterns](topics/22%20-%20Vlákna,%20Paralerní%20programování,%20Asynchroní%20metody,%20Concurrent%20design%20patterns.md)
+23. [Vlastnosti datových struktur - Seřazenost a opakování prvků, Indexace, hashování a klíče prvků](topics/23%20-%20Vlastnosti%20datových%20struktur%20-%20Seřazenost%20a%20opakování%20prvků,%20Indexace,%20hashování%20a%20klíče%20prvků.md)
 24. [Výjimky a aserce, debugování a zpracování chyb](topics/24%20-%20Výjimky%20a%20aserce,%20debugování%20a%20zpracování%20chyb.md)
 25. [Zpracování a parsování textových dat, regulární výrazy, kódování a stringy](topics/25%20-%20Zpracování%20a%20parsování%20textových%20dat,%20regulární%20výrazy,%20kódování%20a%20stringy.md)
 
