@@ -5,7 +5,7 @@
 ## O čem mluvit?
 
 - **Základní koncepty:** 
-  - Definice vyjímeky, aserce a chyb v programování
+  - Definice vyjímky, aserce a chyb v programování
   - Vysvětli:
     - co jsou to výjimky
     - proč jsou důležité
@@ -69,7 +69,6 @@
     - _"Možná indexuji od 1 namísto od 0"_
   3. Experiment, který mohu opakovat
   4. Vyběr Test caseu, na kterém mohu hypotézu zkoušet
-
 ### Error message
 - = Vyjímky
 - Jsou velice jednoduché na opravení
@@ -97,34 +96,27 @@
     a = len([1,2,3]  # SyntaxError
     print(a)
 - ...
-
 ### Logické chyby
 - Při řešení logických problémů je dobré dělat si přestávky. Jít na čerstvý vzuch, najíst se, vyspat se...
 - Je možné že bude i potřeba začít psát kód znovu od začátku
 - Rubber ducky debbuging
   - Programátor vysvětluje svůj kód "gumové kachně" (Ideálně někdo, kdo nerozumí programování) (Klidně i té kachně)
   - Back to basics
-
 ### Co nedělat
 - Psát celý kód
 - Testovat celý kód
 - Debuggovat celý kód
-<br><br>
-
 - Měnit celý kód
   - Zapamatovat kde je chyba
 - Testovat kód
   - Zapomenout kde je chyba
 - Panika 
-
 ### Co dělat
 - Psát funkce
 - Testovat funkce
 - Debuggovat funkce
   - A znovu
     - = Integration testing
-<br><br>
-
 - Zálohovat kód
 - Měnit kód
 - Sepsat si potencionální bugy do komentářů
@@ -176,13 +168,10 @@
   - **Vrácení "error" hodnoty**
     - Není ideální, protože musíme ve zbytku kódu kontrolovat, zde funkce vrací dannou error hodnotu
   - **Vyvolání vlastní vyjímky**
-    - ```Python 
+```Python 
       raise <jmenoVyjimky>(<argumenty>)
       raise ValueError("Uživatel zadal záporné číslo")
-      ```
-    - <details><summary><a>Příklad</a></summary>
-      <hr/>
-  
+    
       ```Python
       def get_ratios(L1, L2):
       """ Assumes: L1 and L2 are lists of equal length of numbers
@@ -196,24 +185,18 @@
         except:
           raise ValueError('get_ratios called with bad arg')
       return ratios
-      ```
+```
 
-      <hr/>
-      </details>
 ---
 ## Aserce (Asserions)
 - Předpoklad pro hodnoty ve funkci
-  - Elegantní řešeni kontroly vstupních a výstupních hodnot
+	- Elegantní řešeni kontroly vstupních a výstupních hodnot
 - Při nesplnění vyvolá `AssertionError`
 - Většinou se používají na začátku nebo na konci funkce
 - Lze si představit jako past na bugy
-- <details><summary><a>Příklad</a></summary>
-  <hr/>
-  
+
   ```Python
   def avg(grades):
     assert not len(grades) == 0, 'no grades data'
     return sum(grades)/len(grades)
   ```
-  <hr/>
-  </details>
