@@ -178,5 +178,7 @@ bool result = isUpper("hello world!!");
 #### Action
 - nemá výstup, tzv. delegát co vrací void
 ```csharp
-Tyvole něco ig
+// Action s jedním vstupním parametrem
+Action<string> print = message => Console.WriteLine(message);
+print("Hello, world!"); // Vytiskne "Hello, world!"
 ```
